@@ -1,0 +1,174 @@
+<!doctype html><html lang=zh-cn dir=ltr><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><meta name=description content="deepin20编译ckermit串口通信软件"><title>deepin20编译ckermit</title><link rel=canonical href=https://juju306.github.io/p/deepin20%E7%BC%96%E8%AF%91ckermit/><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=preload as=style href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"><link rel=stylesheet href=/scss/style.min.6c875234350e518395efbf51958523b0852fb2215ab8cb81358f9317153eba2d.css><meta property='og:title' content="deepin20编译ckermit"><meta property='og:description' content="deepin20编译ckermit串口通信软件"><meta property='og:url' content='https://juju306.github.io/p/deepin20%E7%BC%96%E8%AF%91ckermit/'><meta property='og:site_name' content='我的博客'><meta property='og:type' content='article'><meta property='article:section' content='Post'><meta property='article:tag' content='deepin'><meta property='article:tag' content='ckermit'><meta property='article:tag' content='compile'><meta property='article:published_time' content='2020-07-03T18:36:55+08:00'><meta property='article:modified_time' content='2020-07-03T18:36:55+08:00'><meta name=twitter:title content="deepin20编译ckermit"><meta name=twitter:description content="deepin20编译ckermit串口通信软件"><link rel="shortcut icon" href=/img/avatar.png></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label=切换菜单>
+<span class=hamburger-box><span class=hamburger-inner></span></span></button><header><figure class=site-avatar><a href=/><img src=/img/avatar.png width=150 height=150 class=site-logo loading=lazy alt=Avatar>
+</a><span class=emoji>✏️</span></figure><div class=site-meta><h1 class=site-name><a href=/>我的博客</a></h1><h2 class=site-description>往前走，别回头。。。</h2></div></header><ol class=menu-social><li><a href=https://gitee.com/juju306 title=Gitee rel=me><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-cloud-code"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M11 18.004H6.657C4.085 18 2 15.993 2 13.517c0-2.475 2.085-4.482 4.657-4.482.393-1.762 1.794-3.2 3.675-3.773 1.88-.572 3.956-.193 5.444 1 1.488 1.19 2.162 3.007 1.77 4.769h.99a3.468 3.468.0 013.307 2.444"/><path d="M20 21l2-2-2-2"/><path d="M17 17l-2 2 2 2"/></svg></a></li><li><a href=https://github.com/juju306 title=GitHub rel=me><svg class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6.0 00-1.3-3.2 4.2 4.2.0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3.0 00-6.2.0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2.0 00-.1 3.2A4.6 4.6.0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></li></ol><ol class=menu id=main-menu><li><a href=/><svg class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="5 12 3 12 12 3 21 12 19 12"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M9 21v-6a2 2 0 012-2h2a2 2 0 012 2v6"/></svg>
+<span>主页</span></a></li><li><a href=/%E5%85%B3%E4%BA%8E/><svg class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg>
+<span>关于</span></a></li><li><a href=/archives/><svg class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg>
+<span>归档</span></a></li><li><a href=/search/><svg class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg>
+<span>搜索</span></a></li><li><a href=/%E9%93%BE%E6%8E%A5/><svg class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M10 14a3.5 3.5.0 005 0l4-4a3.5 3.5.0 00-5-5l-.5.5"/><path d="M14 10a3.5 3.5.0 00-5 0l-4 4a3.5 3.5.0 005 5l.5-.5"/></svg>
+<span>链接</span></a></li><li class=menu-bottom-section><ol class=menu><li id=i18n-switch><svg class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 5h7"/><path d="M9 3v2c0 4.418-2.239 8-5 8"/><path d="M5 9c-.003 2.144 2.952 3.908 6.7 4"/><path d="M12 20l4-9 4 9"/><path d="M19.1 18h-6.2"/></svg>
+<select name=language title=language onchange="window.location.href=this.selectedOptions[0].value"><option value=/en/>English</option><option value=/p/deepin20%E7%BC%96%E8%AF%91ckermit/ selected>简体中文</option></select></li><li id=dark-mode-toggle><svg class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
+<svg class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
+<span>暗色模式</span></li></ol></li></ol></aside><aside class="sidebar right-sidebar sticky"><section class="widget archives"><div class=widget-icon><svg class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg></div><h2 class="widget-title section-title">目录</h2><div class=widget--toc><nav class=toc-nav id=TableOfContents><ol><li><a href=#一在哥伦比亚大学官网下载最新的ckermit源码>一、在哥伦比亚大学官网下载最新的ckermit源码</a></li><li><a href=#二编译源码>二、编译源码</a></li><li><a href=#三解决第一个错误>三、解决第一个错误</a></li><li><a href=#四解决第二个错误>四、解决第二个错误</a></li></ol></nav></div></section></aside><main class="main full-width"><article class=main-article><header class=article-header><div class=article-details><header class=article-category><a href=/categories/%E6%8A%80%E6%9C%AF/ style=background-color:#beefd9;color:#0f3d29>技术
+</a><a href=/categories/%E6%95%99%E7%A8%8B/ style=background-color:#dfbeef;color:#2f0f3d>教程</a></header><div class=article-title-wrapper><h2 class=article-title><a href=/p/deepin20%E7%BC%96%E8%AF%91ckermit/>deepin20编译ckermit</a></h2><h3 class=article-subtitle>deepin20编译ckermit串口通信软件</h3></div><footer class=article-meta><div class=inline-meta><svg class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg>
+<time class=article-time--published datetime=2020-07-03T18:36:55+08:00>2020年7月3日星期五</time>
+<svg class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
+<time class=article-time--reading>阅读时长: 2 分钟</time></div></footer></div></header><aside class=article-toc><details><summary><div class=article-toc-title><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6-6 6"/></svg>
+<span>目录</span></div></summary><nav class=toc-nav><ol><li><a href=#一在哥伦比亚大学官网下载最新的ckermit源码>一、在哥伦比亚大学官网下载最新的ckermit源码</a></li><li><a href=#二编译源码>二、编译源码</a></li><li><a href=#三解决第一个错误>三、解决第一个错误</a></li><li><a href=#四解决第二个错误>四、解决第二个错误</a></li></ol></nav></details></aside><section class=article-content><p>由于deepin20的软件仓库里面没有ckermit，所以只能自行编译了，期间遇到了一些坑，记录一下</p><h2 id=一在哥伦比亚大学官网下载最新的ckermit源码>一、在哥伦比亚大学官网下载最新的ckermit源码</h2><p><a class=link href=http://www.columbia.edu/kermit/ck90.html target=_blank rel=noopener>http://www.columbia.edu/kermit/ck90.html</a></p><p>这个下载地址不好找，或者又是下载不动，很麻烦，我这里也有下载好的</p><p><a class=link href=cku302.zip>cku302.zip</a></p><h2 id=二编译源码>二、编译源码</h2><p>解压进入源码目录，执行</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>make linux
+</span></span></code></pre></td></tr></table></div></div><p>报错：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>ckucmd.c: In <span class=k>function</span> ‘cmdconchk’:
+</span></span><span class=line><span class=cl>ckucmd.c:7385:48: error: ‘FILE’ <span class=o>{</span>aka ‘struct _IO_FILE’<span class=o>}</span> has no member named ‘_cnt’
+</span></span><span class=line><span class=cl>     debug<span class=o>(</span>F101,<span class=s2>&#34;cmdconchk stdin-&gt;_cnt&#34;</span>,<span class=s2>&#34;&#34;</span>,stdin-&gt;_cnt<span class=o>)</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>                                                ^~
+</span></span><span class=line><span class=cl>ckcdeb.h:5129:51: note: in definition of macro ‘debug’
+</span></span><span class=line><span class=cl> <span class=o>((</span>void<span class=o>)(</span>deblog?dodebug<span class=o>(</span>a,b,<span class=o>(</span>char *<span class=o>)(</span>c<span class=o>)</span>,<span class=o>(</span>CK_OFF_T<span class=o>)(</span>d<span class=o>))</span>:0<span class=o>))</span>
+</span></span><span class=line><span class=cl>                                                   ^
+</span></span><span class=line><span class=cl>ckucmd.c:7386:14: error: ‘FILE’ <span class=o>{</span>aka ‘struct _IO_FILE’<span class=o>}</span> has no member named ‘_cnt’
+</span></span><span class=line><span class=cl>     <span class=nv>x</span> <span class=o>=</span> stdin-&gt;_cnt<span class=p>;</span>
+</span></span><span class=line><span class=cl>              ^~
+</span></span></code></pre></td></tr></table></div></div><p>分析ckucmd.c:7385源代码：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=cm>/* Here we must look inside the stdin buffer - highly platform dependent */</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=cp>#ifdef _IO_file_flags			</span><span class=cm>/* Linux */</span><span class=cp>
+</span></span></span><span class=line><span class=cl>    <span class=n>x</span> <span class=o>=</span> <span class=p>(</span><span class=kt>int</span><span class=p>)</span> <span class=p>((</span><span class=n>stdin</span><span class=o>-&gt;</span><span class=n>_IO_read_end</span><span class=p>)</span> <span class=o>-</span> <span class=p>(</span><span class=n>stdin</span><span class=o>-&gt;</span><span class=n>_IO_read_ptr</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>    <span class=nf>debug</span><span class=p>(</span><span class=n>F101</span><span class=p>,</span><span class=s>&#34;cmdconchk _IO_file_flags&#34;</span><span class=p>,</span><span class=s>&#34;&#34;</span><span class=p>,</span><span class=n>x</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=cp>#else  </span><span class=cm>/* _IO_file_flags */</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#ifdef USE_FILE_CNT			</span><span class=cm>/* Traditional */</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#ifdef VMS
+</span></span></span><span class=line><span class=cl>    <span class=nf>debug</span><span class=p>(</span><span class=n>F101</span><span class=p>,</span><span class=s>&#34;cmdconchk (*stdin)-&gt;_cnt&#34;</span><span class=p>,</span><span class=s>&#34;&#34;</span><span class=p>,(</span><span class=o>*</span><span class=n>stdin</span><span class=p>)</span><span class=o>-&gt;</span><span class=n>_cnt</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>x</span> <span class=o>=</span> <span class=p>(</span><span class=o>*</span><span class=n>stdin</span><span class=p>)</span><span class=o>-&gt;</span><span class=n>_cnt</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=cp>#else
+</span></span></span><span class=line><span class=cl><span class=cp>#ifdef NOARROWKEYS
+</span></span></span><span class=line><span class=cl>    <span class=nf>debug</span><span class=p>(</span><span class=n>F101</span><span class=p>,</span><span class=s>&#34;cmdconchk NOARROWKEYS x&#34;</span><span class=p>,</span><span class=s>&#34;&#34;</span><span class=p>,</span><span class=mi>0</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=cp>#else
+</span></span></span><span class=line><span class=cl>    <span class=nf>debug</span><span class=p>(</span><span class=n>F101</span><span class=p>,</span><span class=s>&#34;cmdconchk stdin-&gt;_cnt&#34;</span><span class=p>,</span><span class=s>&#34;&#34;</span><span class=p>,</span><span class=n>stdin</span><span class=o>-&gt;</span><span class=n>_cnt</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>x</span> <span class=o>=</span> <span class=n>stdin</span><span class=o>-&gt;</span><span class=n>_cnt</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=cp>#endif </span><span class=cm>/* NOARROWKEYS */</span><span class=cp>
+</span></span></span></code></pre></td></tr></table></div></div><p>根据注释来看，这段代码是高度平台相关的。而我经过搜索得知，在linux下stdin结构体是没有_cnt成员的，而在msvc下才有这个成员，所以肯定是错误地执行了#ifdef分支，应该要执行注释为<code>/* Linux */</code>的分支，可是由于宏定义<code>_IO_file_flags</code>不存在，执行了<code>/* Traditional */</code>分支。所以我们需要手动把宏定义加进去</p><h2 id=三解决第一个错误>三、解决第一个错误</h2><p>编辑makefile中的linuxa目标：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-makefile data-lang=makefile><span class=line><span class=cl><span class=nf>linuxa</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>    @echo <span class=s1>&#39;Making C-Kermit $(CKVER) for Linux 1.2 or later...&#39;</span>
+</span></span><span class=line><span class=cl>    @echo <span class=s1>&#39;IMPORTANT: Read the comments in the linux section of the&#39;</span>
+</span></span><span class=line><span class=cl>    @echo <span class=s1>&#39;makefile if you have trouble.&#39;</span>
+</span></span><span class=line><span class=cl>    <span class=k>$(</span>MAKE<span class=k>)</span> xermit <span class=nv>KTARGET</span><span class=o>=</span><span class=nv>$$</span><span class=o>{</span>KTARGET:-<span class=k>$(</span>@<span class=k>)</span><span class=o>}</span> <span class=s2>&#34;CC = gcc&#34;</span> <span class=s2>&#34;CC2 = gcc&#34;</span> <span class=se>\
+</span></span></span><span class=line><span class=cl>    <span class=s2>&#34;CFLAGS = -O -DLINUX -pipe -funsigned-char -DFNFLOAT -DCK_POSIX_SIG -D_IO_file_flags \
+</span></span></span><span class=line><span class=cl><span class=s2>    -DCK_NEWTERM -DTCPSOCKET -DLINUXFSSTND -DNOCOTFMC -DPOSIX \
+</span></span></span><span class=line><span class=cl><span class=s2>    -DUSE_STRERROR </span><span class=k>$(</span>KFLAGS<span class=k>)</span><span class=s2>&#34;</span> <span class=s2>&#34;LNKFLAGS = </span><span class=k>$(</span>LNKFLAGS<span class=k>)</span><span class=s2>&#34;</span> <span class=se>\
+</span></span></span><span class=line><span class=cl>    <span class=s2>&#34;LIBS = </span><span class=k>$(</span>LIBS<span class=k>)</span><span class=s2> -lm&#34;</span>
+</span></span></code></pre></td></tr></table></div></div><p>在CFLAGS后面加上<code>-D_IO_file_flags</code></p><p>继续执行</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>make linux
+</span></span></code></pre></td></tr></table></div></div><p>编译成功，但是链接报错</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>/usr/bin/ld: ckuusx.o: in <span class=k>function</span> <span class=sb>`</span>shocps<span class=s1>&#39;:
+</span></span></span><span class=line><span class=cl><span class=s1>ckuusx.c:(.text+0xdb): undefined reference to `stdscr&#39;</span>
+</span></span><span class=line><span class=cl>/usr/bin/ld: ckuusx.c:<span class=o>(</span>.text+0xe0<span class=o>)</span>: undefined reference to <span class=sb>`</span>wmove<span class=s1>&#39;
+</span></span></span><span class=line><span class=cl><span class=s1>/usr/bin/ld: ckuusx.c:(.text+0xf6): undefined reference to `printw&#39;</span>
+</span></span><span class=line><span class=cl>/usr/bin/ld: ckuusx.c:<span class=o>(</span>.text+0xfd<span class=o>)</span>: undefined reference to <span class=sb>`</span>stdscr<span class=s1>&#39;
+</span></span></span><span class=line><span class=cl><span class=s1>/usr/bin/ld: ckuusx.c:(.text+0x102): undefined reference to `wclrtoeol&#39;</span>
+</span></span><span class=line><span class=cl>/usr/bin/ld: ckuusx.c:<span class=o>(</span>.text+0x17f<span class=o>)</span>: undefined reference to <span class=sb>`</span>stdscr<span class=s1>&#39;
+</span></span></span><span class=line><span class=cl><span class=s1>/usr/bin/ld: ckuusx.c:(.text+0x184): undefined reference to `wmove&#39;</span>
+</span></span><span class=line><span class=cl>/usr/bin/ld: ckuusx.c:<span class=o>(</span>.text+0x1f8<span class=o>)</span>: undefined reference to <span class=sb>`</span>printw<span class=err>&#39;</span>
+</span></span></code></pre></td></tr></table></div></div><p>后面还有类似的好多错误信息，我就不贴了，搜索一下，似乎是缺少curses库造成的</p><h2 id=四解决第二个错误>四、解决第二个错误</h2><p>编辑makefile文件，在linuxa目标的<code>-lm</code>后面加上<code>-lcurses</code>：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-makefile data-lang=makefile><span class=line><span class=cl><span class=nf>linuxa</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>    @echo <span class=s1>&#39;Making C-Kermit $(CKVER) for Linux 1.2 or later...&#39;</span>
+</span></span><span class=line><span class=cl>    @echo <span class=s1>&#39;IMPORTANT: Read the comments in the linux section of the&#39;</span>
+</span></span><span class=line><span class=cl>    @echo <span class=s1>&#39;makefile if you have trouble.&#39;</span>
+</span></span><span class=line><span class=cl>    <span class=k>$(</span>MAKE<span class=k>)</span> xermit <span class=nv>KTARGET</span><span class=o>=</span><span class=nv>$$</span><span class=o>{</span>KTARGET:-<span class=k>$(</span>@<span class=k>)</span><span class=o>}</span> <span class=s2>&#34;CC = gcc&#34;</span> <span class=s2>&#34;CC2 = gcc&#34;</span> <span class=se>\
+</span></span></span><span class=line><span class=cl>    <span class=s2>&#34;CFLAGS = -O -DLINUX -pipe -funsigned-char -DFNFLOAT -DCK_POSIX_SIG -D_IO_file_flags \
+</span></span></span><span class=line><span class=cl><span class=s2>    -DCK_NEWTERM -DTCPSOCKET -DLINUXFSSTND -DNOCOTFMC -DPOSIX \
+</span></span></span><span class=line><span class=cl><span class=s2>    -DUSE_STRERROR </span><span class=k>$(</span>KFLAGS<span class=k>)</span><span class=s2>&#34;</span> <span class=s2>&#34;LNKFLAGS = </span><span class=k>$(</span>LNKFLAGS<span class=k>)</span><span class=s2>&#34;</span> <span class=se>\
+</span></span></span><span class=line><span class=cl>    <span class=s2>&#34;LIBS = </span><span class=k>$(</span>LIBS<span class=k>)</span><span class=s2> -lm -lcurses&#34;</span>
+</span></span></code></pre></td></tr></table></div></div><p>似乎还要安装一下curses库，反正我装了</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>sudo apt install libncurses5-dev
+</span></span></code></pre></td></tr></table></div></div><p>继续执行</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>make linux
+</span></span></code></pre></td></tr></table></div></div><p>编译链接成功，在源码根目录生成wermit可执行文件</p><p>运行一下</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>juju@juju-PC:~/ckermit$ ./wermit 
+</span></span><span class=line><span class=cl>?SET SPEED has no effect without prior SET LINE
+</span></span><span class=line><span class=cl>C-Kermit 9.0.302 OPEN SOURCE:, <span class=m>20</span> Aug 2011, <span class=k>for</span> Linux <span class=o>(</span>64-bit<span class=o>)</span>
+</span></span><span class=line><span class=cl> Copyright <span class=o>(</span>C<span class=o>)</span> 1985, 2011,
+</span></span><span class=line><span class=cl>  Trustees of Columbia University in the City of New York.
+</span></span><span class=line><span class=cl>Type ? or HELP <span class=k>for</span> help.
+</span></span><span class=line><span class=cl><span class=o>(</span>/home/juju/ckermit/<span class=o>)</span> C-Kermit&gt;exit
+</span></span></code></pre></td></tr></table></div></div></section><footer class="article-meta article-footer"><section class=article-tags><a href=/tags/deepin/>Deepin</a>
+<a href=/tags/ckermit/>Ckermit</a>
+<a href=/tags/compile/>Compile</a></section><section class="article-copyright inline-meta"><svg class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg>
+<span>Licensed under <a class=link href=https://creativecommons.org/licenses/by-nc-sa/4.0/ target=_blank rel=noopener>CC BY-NC-SA 4.0</a></span></section></footer><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css integrity=sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV crossorigin=anonymous><script src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js integrity=sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8 crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous defer></script><script>window.addEventListener("DOMContentLoaded",()=>{const e=[".main-article",".widget--toc"];e.forEach(e=>{const t=document.querySelector(e);t&&renderMathInElement(t,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1},{left:"\\[",right:"\\]",display:!0}],ignoredClasses:["gist"]})})})</script></article><aside><h2 class=section-title>相关文章</h2><div class=subsection-list><div class=article-list--tile><article><a href=/p/deepin20.2-%E7%BC%96%E8%AF%91qt5.15.2/><div class=article-details><h2 class=article-title>deepin20.2 编译qt5.15.2</h2></div></a></article><article><a href=/p/deepin%E6%90%AD%E5%BB%BAdde-dock%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/><div class=article-details><h2 class=article-title>deepin搭建dde-dock插件开发环境</h2></div></a></article><article class=has-image><a href=/p/gcc-g-%E6%94%B9%E4%B8%BA%E4%B8%AD%E6%96%87%E6%8F%90%E7%A4%BA/><div class=article-image><img alt="Featured image of post gcc/g++改为中文提示" height=105 loading=lazy src=/p/gcc-g-%E6%94%B9%E4%B8%BA%E4%B8%AD%E6%96%87%E6%8F%90%E7%A4%BA/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20190922214827.png width=773></div><div class=article-details style="background:linear-gradient(0deg,#03b70080 0%,#010401C0 100%)"><h2 class=article-title>gcc/g++改为中文提示</h2></div></a></article><article class=has-image><a href=/p/%E5%AF%B9%E5%8A%A0%E5%AF%86%E7%9A%84m3u8%E7%A6%BB%E6%95%A3%E8%A7%86%E9%A2%91%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E8%A7%A3%E5%AF%86%E5%90%88%E5%B9%B6python-deepin-linux/><div class=article-image><img alt="Featured image of post 对加密的m3u8离散视频文件进行解密合并(python deepin linux)" height=150 loading=lazy src=/p/%E5%AF%B9%E5%8A%A0%E5%AF%86%E7%9A%84m3u8%E7%A6%BB%E6%95%A3%E8%A7%86%E9%A2%91%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E8%A7%A3%E5%AF%86%E5%90%88%E5%B9%B6python-deepin-linux/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20190918230401_hu_4d4b2caa303ae674.jpg srcset="/p/%E5%AF%B9%E5%8A%A0%E5%AF%86%E7%9A%84m3u8%E7%A6%BB%E6%95%A3%E8%A7%86%E9%A2%91%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E8%A7%A3%E5%AF%86%E5%90%88%E5%B9%B6python-deepin-linux/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20190918230401_hu_4d4b2caa303ae674.jpg 1x" width=250></div><div class=article-details style="background:linear-gradient(0deg,#43434380 0%,#fbfbfcC0 100%)"><h2 class=article-title>对加密的m3u8离散视频文件进行解密合并(python deepin linux)</h2></div></a></article><article class=has-image><a href=/p/deepin-linux%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8Cfeedingbottle/><div class=article-image><img alt="Featured image of post deepin Linux编译运行feedingbottle" height=150 loading=lazy src=/p/deepin-linux%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8Cfeedingbottle/%E5%A5%B6%E7%93%B6%E7%95%8C%E9%9D%A2_hu_4e867f4364e12b38.png srcset="/p/deepin-linux%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8Cfeedingbottle/%E5%A5%B6%E7%93%B6%E7%95%8C%E9%9D%A2_hu_4e867f4364e12b38.png 1x, /p/deepin-linux%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8Cfeedingbottle/%E5%A5%B6%E7%93%B6%E7%95%8C%E9%9D%A2_hu_349e1756ca48b761.png 2x" width=250></div><div class=article-details style="background:linear-gradient(0deg,#cdcdcd80 0%,#0b0e0cC0 100%)"><h2 class=article-title>deepin Linux编译运行feedingbottle</h2></div></a></article></div></div></aside><script src=https://giscus.app/client.js data-repo=wangqian306/wangqian306.github.io data-repo-id=R_kgDOUZA0nA data-category=Announcements data-category-id=DIC_kwDOUZA0nM4DFgc2 data-mapping=pathname data-strict=0 data-reactions-enabled=1 data-emit-metadata=0 data-input-position=top data-theme=light data-lang=zh-CN data-loading=lazy crossorigin=anonymous async></script><script>function setGiscusTheme(e){let t=document.querySelector("iframe.giscus-frame");t&&t.contentWindow.postMessage({giscus:{setConfig:{theme:e}}},"https://giscus.app")}(function(){addEventListener("message",t=>{if(event.origin!=="https://giscus.app")return;e()}),window.addEventListener("onColorSchemeChange",e);function e(){setGiscusTheme(document.documentElement.dataset.scheme==="light"?"light":"dark_dimmed")}})()</script><footer class=site-footer><section class=copyright>&copy;
+2026 我的博客</section><section class=powerby>使用 <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> 构建<br>主题 <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=4.0.3>Stack</a></b> 由 <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a> 设计</section></footer><script type=module>
+    import gallery from '\/ts\/gallery.js';
+
+    const articleContent = document.querySelector('.article-content');
+    const shouldLoad = articleContent && (articleContent.querySelectorAll('figure').length > 0 || articleContent.querySelectorAll('img.gallery-image').length > 0);
+    
+    if (shouldLoad) {
+        gallery(articleContent);
+
+        const PhotoSwipeLightbox = (await import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js")).default;
+        const styleHref = "https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.css";
+
+        const styleTag = document.createElement('link');
+        styleTag.rel = 'stylesheet';
+        styleTag.href = styleHref;
+        document.head.appendChild(styleTag);
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallerySelector: '.article-content',
+            childSelector: 'figure a.image-link',
+            pswpModule: () => import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js")
+        });
+        lightbox.init();
+    }
+</script></main></div><script type=text/javascript src=/ts/main.f856840516f7c2ad1769a8f5937e3d08d6cb386e2cd2dd025ae696e0ff207958.js defer></script></body></html>

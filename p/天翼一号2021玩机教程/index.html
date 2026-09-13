@@ -1,0 +1,882 @@
+<!doctype html><html lang=zh-cn dir=ltr><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><meta name=description content="天翼一号2021玩机教程"><title>天翼一号2021玩机教程</title><link rel=canonical href=https://juju306.github.io/p/%E5%A4%A9%E7%BF%BC%E4%B8%80%E5%8F%B72021%E7%8E%A9%E6%9C%BA%E6%95%99%E7%A8%8B/><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=preload as=style href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"><link rel=stylesheet href=/scss/style.min.6c875234350e518395efbf51958523b0852fb2215ab8cb81358f9317153eba2d.css><meta property='og:title' content="天翼一号2021玩机教程"><meta property='og:description' content="天翼一号2021玩机教程"><meta property='og:url' content='https://juju306.github.io/p/%E5%A4%A9%E7%BF%BC%E4%B8%80%E5%8F%B72021%E7%8E%A9%E6%9C%BA%E6%95%99%E7%A8%8B/'><meta property='og:site_name' content='我的博客'><meta property='og:type' content='article'><meta property='article:section' content='Post'><meta property='article:tag' content='Android'><meta property='article:tag' content='TWRP'><meta property='article:tag' content='port'><meta property='article:published_time' content='2026-09-10T18:36:55+08:00'><meta property='article:modified_time' content='2026-09-10T18:36:55+08:00'><meta property='og:image' content='https://juju306.github.io/p/%E5%A4%A9%E7%BF%BC%E4%B8%80%E5%8F%B72021%E7%8E%A9%E6%9C%BA%E6%95%99%E7%A8%8B/reboot-recovery.jpg'><meta name=twitter:title content="天翼一号2021玩机教程"><meta name=twitter:description content="天翼一号2021玩机教程"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content='https://juju306.github.io/p/%E5%A4%A9%E7%BF%BC%E4%B8%80%E5%8F%B72021%E7%8E%A9%E6%9C%BA%E6%95%99%E7%A8%8B/reboot-recovery.jpg'><link rel="shortcut icon" href=/img/avatar.png></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label=切换菜单>
+<span class=hamburger-box><span class=hamburger-inner></span></span></button><header><figure class=site-avatar><a href=/><img src=/img/avatar.png width=150 height=150 class=site-logo loading=lazy alt=Avatar>
+</a><span class=emoji>✏️</span></figure><div class=site-meta><h1 class=site-name><a href=/>我的博客</a></h1><h2 class=site-description>往前走，别回头。。。</h2></div></header><ol class=menu-social><li><a href=https://gitee.com/juju306 title=Gitee rel=me><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-cloud-code"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M11 18.004H6.657C4.085 18 2 15.993 2 13.517c0-2.475 2.085-4.482 4.657-4.482.393-1.762 1.794-3.2 3.675-3.773 1.88-.572 3.956-.193 5.444 1 1.488 1.19 2.162 3.007 1.77 4.769h.99a3.468 3.468.0 013.307 2.444"/><path d="M20 21l2-2-2-2"/><path d="M17 17l-2 2 2 2"/></svg></a></li><li><a href=https://github.com/juju306 title=GitHub rel=me><svg class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6.0 00-1.3-3.2 4.2 4.2.0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3.0 00-6.2.0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2.0 00-.1 3.2A4.6 4.6.0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></li></ol><ol class=menu id=main-menu><li><a href=/><svg class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="5 12 3 12 12 3 21 12 19 12"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M9 21v-6a2 2 0 012-2h2a2 2 0 012 2v6"/></svg>
+<span>主页</span></a></li><li><a href=/%E5%85%B3%E4%BA%8E/><svg class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg>
+<span>关于</span></a></li><li><a href=/archives/><svg class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg>
+<span>归档</span></a></li><li><a href=/search/><svg class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg>
+<span>搜索</span></a></li><li><a href=/%E9%93%BE%E6%8E%A5/><svg class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M10 14a3.5 3.5.0 005 0l4-4a3.5 3.5.0 00-5-5l-.5.5"/><path d="M14 10a3.5 3.5.0 00-5 0l-4 4a3.5 3.5.0 005 5l.5-.5"/></svg>
+<span>链接</span></a></li><li class=menu-bottom-section><ol class=menu><li id=i18n-switch><svg class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 5h7"/><path d="M9 3v2c0 4.418-2.239 8-5 8"/><path d="M5 9c-.003 2.144 2.952 3.908 6.7 4"/><path d="M12 20l4-9 4 9"/><path d="M19.1 18h-6.2"/></svg>
+<select name=language title=language onchange="window.location.href=this.selectedOptions[0].value"><option value=/en/>English</option><option value=/p/%E5%A4%A9%E7%BF%BC%E4%B8%80%E5%8F%B72021%E7%8E%A9%E6%9C%BA%E6%95%99%E7%A8%8B/ selected>简体中文</option></select></li><li id=dark-mode-toggle><svg class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
+<svg class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
+<span>暗色模式</span></li></ol></li></ol></aside><aside class="sidebar right-sidebar sticky"><section class="widget archives"><div class=widget-icon><svg class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg></div><h2 class="widget-title section-title">目录</h2><div class=widget--toc><nav class=toc-nav id=TableOfContents><ol><li><a href=#一刷机备份>一、刷机备份</a><ol><li><a href=#1u2s模式刷机工具>1.u2s模式刷机工具</a></li></ol></li><li><a href=#2-fastboot刷机>2. fastboot刷机</a></li><li><a href=#二构建ud710-bsp开发环境>二、构建ud710 BSP开发环境</a></li><li><a href=#三移植twrp-revocery>三、移植TWRP revocery</a><ol><li><a href=#1生成ud710_7h10设备树>1.生成ud710_7h10设备树</a></li><li><a href=#2-解包dtb并反编译dts>2. 解包dtb并反编译dts</a></li><li><a href=#3下载twrp源码>3.下载twrp源码</a></li><li><a href=#4-刷入recovery>4. 刷入recovery</a></li><li><a href=#5-修复twrp问题>5. 修复TWRP问题</a></li></ol></li><li><a href=#四解除boot-chain的签名验证>四、解除boot chain的签名验证</a><ol><li><a href=#1-跳过对fdl1splloader的签名验证>1. 跳过对fdl1/splloader的签名验证</a></li><li><a href=#2-跳过对fdl2uboot的签名验证>2. 跳过对fdl2/uboot的签名验证</a></li><li><a href=#3-跳过avb的签名验证>3. 跳过avb的签名验证</a></li></ol></li><li><a href=#五修复各种bug>五、修复各种bug</a><ol><li><a href=#4-修复twrp触摸屏>4. 修复twrp触摸屏</a></li><li><a href=#5-修复循环重启进入twrp>5. 修复循环重启进入twrp</a></li><li><a href=#6-修复震动马达>6. 修复震动马达</a></li><li><a href=#7-修复没有usb调试和mtp>7. 修复没有usb调试和MTP</a></li><li><a href=#8修复内部存储乱码>8.修复内部存储乱码</a><ol><li></li></ol></li><li><a href=#9-修复fastbootd模式>9. 修复fastbootd模式</a></li></ol></li></ol></nav></div></section></aside><main class="main full-width"><article class="has-image main-article"><header class=article-header><div class=article-image><a href=/p/%E5%A4%A9%E7%BF%BC%E4%B8%80%E5%8F%B72021%E7%8E%A9%E6%9C%BA%E6%95%99%E7%A8%8B/><img alt="Featured image of post 天翼一号2021玩机教程" height=2346 loading=lazy sizes="(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px" src=/p/%E5%A4%A9%E7%BF%BC%E4%B8%80%E5%8F%B72021%E7%8E%A9%E6%9C%BA%E6%95%99%E7%A8%8B/reboot-recovery.jpg srcset="/p/%E5%A4%A9%E7%BF%BC%E4%B8%80%E5%8F%B72021%E7%8E%A9%E6%9C%BA%E6%95%99%E7%A8%8B/reboot-recovery_hu_e1dd9fe7e85565f2.jpg 800w, /p/%E5%A4%A9%E7%BF%BC%E4%B8%80%E5%8F%B72021%E7%8E%A9%E6%9C%BA%E6%95%99%E7%A8%8B/reboot-recovery.jpg 1151w" width=1151></a></div><div class=article-details><header class=article-category><a href=/categories/%E6%8A%80%E6%9C%AF/ style=background-color:#beefd9;color:#0f3d29>技术
+</a><a href=/categories/%E6%95%99%E7%A8%8B/ style=background-color:#dfbeef;color:#2f0f3d>教程</a></header><div class=article-title-wrapper><h2 class=article-title><a href=/p/%E5%A4%A9%E7%BF%BC%E4%B8%80%E5%8F%B72021%E7%8E%A9%E6%9C%BA%E6%95%99%E7%A8%8B/>天翼一号2021玩机教程</a></h2><h3 class=article-subtitle>天翼一号2021玩机教程</h3></div><footer class=article-meta><div class=inline-meta><svg class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg>
+<time class=article-time--published datetime=2026-09-10T18:36:55+08:00>2026年9月10日星期四</time>
+<svg class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
+<time class=article-time--reading>阅读时长: 25 分钟</time></div></footer></div></header><aside class=article-toc><details><summary><div class=article-toc-title><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6-6 6"/></svg>
+<span>目录</span></div></summary><nav class=toc-nav><ol><li><a href=#一刷机备份>一、刷机备份</a><ol><li><a href=#1u2s模式刷机工具>1.u2s模式刷机工具</a></li></ol></li><li><a href=#2-fastboot刷机>2. fastboot刷机</a></li><li><a href=#二构建ud710-bsp开发环境>二、构建ud710 BSP开发环境</a></li><li><a href=#三移植twrp-revocery>三、移植TWRP revocery</a><ol><li><a href=#1生成ud710_7h10设备树>1.生成ud710_7h10设备树</a></li><li><a href=#2-解包dtb并反编译dts>2. 解包dtb并反编译dts</a></li><li><a href=#3下载twrp源码>3.下载twrp源码</a></li><li><a href=#4-刷入recovery>4. 刷入recovery</a></li><li><a href=#5-修复twrp问题>5. 修复TWRP问题</a></li></ol></li><li><a href=#四解除boot-chain的签名验证>四、解除boot chain的签名验证</a><ol><li><a href=#1-跳过对fdl1splloader的签名验证>1. 跳过对fdl1/splloader的签名验证</a></li><li><a href=#2-跳过对fdl2uboot的签名验证>2. 跳过对fdl2/uboot的签名验证</a></li><li><a href=#3-跳过avb的签名验证>3. 跳过avb的签名验证</a></li></ol></li><li><a href=#五修复各种bug>五、修复各种bug</a><ol><li><a href=#4-修复twrp触摸屏>4. 修复twrp触摸屏</a></li><li><a href=#5-修复循环重启进入twrp>5. 修复循环重启进入twrp</a></li><li><a href=#6-修复震动马达>6. 修复震动马达</a></li><li><a href=#7-修复没有usb调试和mtp>7. 修复没有usb调试和MTP</a></li><li><a href=#8修复内部存储乱码>8.修复内部存储乱码</a><ol><li></li></ol></li><li><a href=#9-修复fastbootd模式>9. 修复fastbootd模式</a></li></ol></li></ol></nav></details></aside><section class=article-content><h2 id=一刷机备份>一、刷机备份</h2><p>强烈建议刷机之前先把当前的分区进行备份，后面随时可以恢复</p><p>背景知识学习</p><p><a class=link href=https://blog.csdn.net/qq_44520949/article/details/131415656 target=_blank rel=noopener>U-boot15（armv8）启动流程（基于展锐平台）_展锐 开机流程-CSDN博客</a></p><p><a class=link href=https://blog.csdn.net/weixin_38815609/article/details/127297474 target=_blank rel=noopener>展锐UDX710：u-Boot 初始化流程分析_udx710开发软件-CSDN博客</a></p><p>天翼一号2021搭载安卓10，soc是紫光展锐虎贲t7510，对应的主板也叫做ud710-7h10-ctcc，其中ctcc就是中国电信，电信定制机的意思，进入原厂的rec可以看到这个ud710-7h10-ctcc型号。</p><p>目前有原厂的360os魔改的广告系统，有flyme，有AOSP10，flyme和aosp10据说是开发时工程机上的系统</p><h3 id=1u2s模式刷机工具>1.u2s模式刷机工具</h3><p>SpreadTrum u2s diag，是一个类似于 MTK 的深度刷机端口，高通的 9008 端口，麒麟的 COM1.0 端口的深度刷机端口。u2s 端口一般可以干这些事情：</p><ul><li><p>救砖</p></li><li><p>刷系统</p></li><li><p>重新分区</p></li><li><p>备份系统</p></li></ul><p>首先安装SPRD U2S DIAG所需驱动，请使用搜索引擎查找</p><p>天翼一号进入u2s模式：按住设备电源键不动 设备黑屏后马上按住所有按键不动（音量+- 电源键）</p><p>u2s刷机工具有两种，一种是官方的SPD Flash Tool，SPD Flash Tool是适用于用于展讯芯片组<a class=link href=https://www.smzdm.com/fenlei/zhinengshouji/ target=_blank rel=noopener>手机</a>或<a class=link href=https://www.smzdm.com/ju/s2lmm5p/ target=_blank rel=noopener>平板</a>设备固件的刷新工具。目前有三款不同的下载工具，适用于不同的使用场景。详情见(<a class=link href=https://post.smzdm.com/p/alpokl08/ target=_blank rel=noopener>新手教程：SPD Flash Tool使用介绍及刷入多亲2Pro的PAC固件救砖_安卓手机_什么值得买</a>)。</p><ol><li><p>FactoryDownload (用于PCBA阶段生产下载。该工具会初始化PhaseCheck、ProdNV分区、擦除NV参数、预写SN号)</p></li><li><p>UpgradeDownload (用于PCBA或者手机整机的软件升级，升级前会检查校准标志位是否置pass，否则无法进行升级。该工具的主要特点是对NV参数进行强制备份、不会初始化PhaseCheck、ProdNV分区)</p></li><li><p>ResearchDownload (用于研发开发调试。支持读写Flash分区，支持NV参数、PhaseCheck、ProdNV分区的备份，支持对下载文件打包等功能。但此工具默认不初始化ProdNV、PhaseCheck分区)。备份教程(<a class=link href=https://zh-xijun.github.io/blog/posts/spd-readback/#_1 target=_blank rel=noopener>使用ResearchDownload为展讯机型提取镜像 - ZH-XiJun&rsquo;s GitHub pages</a>)。备份的文件是很多个bin和img文件，可以参考这个教程(<a class=link href=https://www.hovatek.com/forum/thread-1232.html target=_blank rel=noopener>How to use research download tool to create Unisoc / Spreadtrum pac file</a>)打包成pac。</p><p><strong>！注意，发现ResearchDownload备份分区会相比spd_dump少十多个，所以不建议使用了</strong></p></li></ol><p>还有一种是spd_dump，是民间大神<a class=link href=https://github.com/TomKing062 target=_blank rel=noopener>TomKing062</a>开发的，详细介绍(<a class=link href=https://blog.moyuzj.cn/index.php/2025/12/13/spd-dump%e4%bd%bf%e7%94%a8%e6%8c%87%e5%8d%97%ef%bc%81/ target=_blank rel=noopener>SPD Dump使用指南！ – 摸鱼真君不摸鱼的小站</a>)，下载地址可以去大神的github官网下载解锁bootloader的文件<a class=link href=https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader/releases target=_blank rel=noopener>Releases · TomKing062/CVE-2022-38694_unlock_bootloader</a>，里面自带的有适用于天翼一号的spd_dump</p><h2 id=2-fastboot刷机>2. fastboot刷机</h2><p>这种就是进入fastboot模式后进行刷机，不多介绍了。</p><h2 id=二构建ud710-bsp开发环境>二、构建ud710 BSP开发环境</h2><p>参考这个教程<a class=link href=https://www.linearteam.top/how-to-compile-chipram-for-ud710/ target=_blank rel=noopener>如何为 UD710 编译 Chipram – LinearTeam</a>，去github下载ud710的BSP源码，这个源码可以生成splloader和uboot（正常开机用的），也就是fdl1.bin和fdl2.bin（u2s刷机用的），这里device文件夹里面没有天翼一号2021的设备树，有的是科大讯飞平板的一些设备树，这些设备也是用的t7510，有些主板也是ud710_7h10，编译测试了一下，ud710_7h10_ctcc生成的fdl1和fdl2能用(要要用25年7月的ud710_tyyh2021.zip解锁文件跑，最新的ud710_tyyh2021.zip无法运行服了)，也就是内存有一些差异的，但是后面的emmc等设备是兼容的</p><p>根据教程安装ubuntu18.04.6 LTS并且安装一些包，根据要求就可以编译</p><h2 id=三移植twrp-revocery>三、移植TWRP revocery</h2><p><a class=link href=https://github.com/Manatsu0721/twrp_devicetree_sprd_ud710_2h10 target=_blank rel=noopener>Manatsu0721/twrp_devicetree_sprd_ud710_2h10: Android device tree for SPRD ud710_2h10</a></p><p>网上已经有大佬共享了ud710_2h10的设备树，我们的设备是ud710_7h10，差不多，我看到了希望</p><h3 id=1生成ud710_7h10设备树>1.生成ud710_7h10设备树</h3><p>github上有一个仓库有自动化的action<a class=link href=https://github.com/q77190858/ud710-TYYH2021-TWRP target=_blank rel=noopener>q77190858/ud710-TYYH2021-TWRP: 自动化制作天翼一号2021版twrp的仓库</a>，我fork了一份，根据readme进行生成，具体原理是调用了python里的一个twrpdtgen的模块，你也可以看它的流程自己的本地搭环境进行生成，可以参看教程<a class=link href=https://cuoxianxu.cn/index.php/archives/41/ target=_blank rel=noopener>【教程】详解TWRP编译与Twrpdtgen设备树一键生成全流程 - 错弦序‘s Blog - 一个科技爱好者的博客</a></p><p>生成的文件是<code>&lt;manufacturer>/&lt;device></code>目录，包含<code>Android.mk</code>、<code>twrp.fstab</code>等关键文件，可根据实际需求进一步修改。我这里是chinatelecom/AURORA，生产商是中国电信，设备代号是欧若拉</p><h3 id=2-解包dtb并反编译dts>2. 解包dtb并反编译dts</h3><p>自己解包boot.img可以使用magiskboot这个开源项目，兼容性比较好，解压的比较彻底，可以去这里下载别人编译好的<a class=link href=https://github.com/Uevo001/magiskboot-linux target=_blank rel=noopener>Uevo001/magiskboot-linux</a></p><p>ud710_bsp/tools/androidq/mkdtimg这个工具也可以解包出dtb</p><p>安装Device Tree Compiler (DTC)工具，这个工具应该是linux通用的</p><p><strong>Device Tree Compiler (DTC)</strong> 是一个用于将设备树源码（DTS 或 DTSI 文件）编译为二进制格式（DTB 文件）的工具，广泛应用于 Linux 内核开发和嵌入式系统中。设备树的主要目的是将硬件描述与内核源码分离，从而提高系统的可移植性和灵活性。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>sudo apt  install device-tree-compiler
+</span></span></code></pre></td></tr></table></div></div><p>用法：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>dtc -I dts -O dtb -o output.dtb input.dts <span class=c1># 编译 DTS 文件为 DTB 文件</span>
+</span></span><span class=line><span class=cl>dtc -I dtb -O dts -o file.dts rk-kernel.dtb <span class=c1># 反编译 DTB 文件为 DTS 文件</span>
+</span></span></code></pre></td></tr></table></div></div><p>生成的设备树文件似乎也没有什么用</p><h3 id=3下载twrp源码>3.下载twrp源码</h3><p><a class=link href=https://mirrors.tuna.tsinghua.edu.cn/help/AOSP/ target=_blank rel=noopener>Aosp | 镜像站使用帮助 | 清华大学开源软件镜像站 | Tsinghua Open Source Mirror</a></p><p><a class=link href="https://help.mirror.nju.edu.cn/AOSP/?mirror=NJU" target=_blank rel=noopener>AOSP - MirrorZ Help</a>或者使用南京大学的镜像源</p><p>使用清华源下载repo，并且设置repo为清华源，设置git的android.googlesource.com镜像到清华源</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>git config --global url.https://mirrors.tuna.tsinghua.edu.cn/git/AOSP/.insteadof https://android.googlesource.com
+</span></span></code></pre></td></tr></table></div></div><p>twrp编译可以参考官方的教程<a class=link href=https://twrp.me/faq/howtocompiletwrp.html target=_blank rel=noopener>How can I get TWRP for my device? (how to compile TWRP)</a></p><p>根据自己设备的安卓版本选择不同的分支</p><h3 id=4-刷入recovery>4. 刷入recovery</h3><p>刷入前要禁用avb，vbmeta.bin就是官方的vbmeta分区，加上参数重新刷入一次就行了</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>fastboot --disable-verity --disable-verification flash vbmeta vbmeta.bin
+</span></span></code></pre></td></tr></table></div></div><p>可能会存在刷入失败的情况，这种情况下不要重启直接进入recovery</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 3. 刷入并立即进入recovery</span>
+</span></span><span class=line><span class=cl>fastboot flash recovery out/target/product/AURORA/recovery.img
+</span></span><span class=line><span class=cl>fastboot reboot recovery
+</span></span></code></pre></td></tr></table></div></div><h3 id=5-修复twrp问题>5. 修复TWRP问题</h3><p><a class=link href=https://blog.mocn.top/posts/fa842843/ target=_blank rel=noopener>利用Github来编译TWRP | Momo5418&rsquo;s Blog</a></p><p><a class=link href=https://xpsoted.github.io/post/%e5%ae%89%e5%8d%93%e6%95%99%e7%a8%8b/hello-world.html target=_blank rel=noopener>0基础编写TWRP的Device Tree | SKDushow&rsquo;s Blog</a></p><p>fastboot死活刷不进去，用了<a class=link href=https://github.com/q77190858/noavb_or_resign_with_magisk target=_blank rel=noopener>q77190858/noavb_or_resign_with_magisk: action toremove avb or resign bsp+vbmeta+boot+(recovery) (boot will be patched with latest magisk)</a>自动签名action，还是刷不进去，用spd_dump强刷进去就卡第一屏蓝屏了</p><p>用bc比较发现，rollback_index值设置太小了<a class=link href=https://blog.csdn.net/jimbo_lee/article/details/139413270 target=_blank rel=noopener>android antirollback verno 获取方法_anti-rollback-CSDN博客</a></p><p><img alt=rollback_index比较 class=gallery-image data-flex-basis=783px data-flex-grow=326 height=664 loading=lazy sizes="(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px" src=/p/%E5%A4%A9%E7%BF%BC%E4%B8%80%E5%8F%B72021%E7%8E%A9%E6%9C%BA%E6%95%99%E7%A8%8B/rollback_index%E6%AF%94%E8%BE%83.jpg srcset="/p/%E5%A4%A9%E7%BF%BC%E4%B8%80%E5%8F%B72021%E7%8E%A9%E6%9C%BA%E6%95%99%E7%A8%8B/rollback_index%E6%AF%94%E8%BE%83_hu_5c5f18aa342d2d9b.jpg 800w, /p/%E5%A4%A9%E7%BF%BC%E4%B8%80%E5%8F%B72021%E7%8E%A9%E6%9C%BA%E6%95%99%E7%A8%8B/rollback_index%E6%AF%94%E8%BE%83_hu_fbece8687971972.jpg 1600w, /p/%E5%A4%A9%E7%BF%BC%E4%B8%80%E5%8F%B72021%E7%8E%A9%E6%9C%BA%E6%95%99%E7%A8%8B/rollback_index%E6%AF%94%E8%BE%83.jpg 2167w" width=2167></p><h2 id=四解除boot-chain的签名验证>四、解除boot chain的签名验证</h2><p>这个机器启动链上全是签名验证，就算刷进去了也没法过验证正常启动<a class=link href=https://github.com/TomKing062/unisoc_chipram_signcheck_exploit target=_blank rel=noopener>TomKing062/unisoc_chipram_signcheck_exploit: a persistent sign check bypass in chipram and early postrom</a></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>BOOTROM → SPL/FDL1 → <span class=o>(</span>TOS<span class=o>)</span> → UBOOT/FDL2 → KERNEL
+</span></span></code></pre></td></tr></table></div></div><p>一步一步来，逐步解除签名验证</p><h3 id=1-跳过对fdl1splloader的签名验证>1. 跳过对fdl1/splloader的签名验证</h3><p><a class=link href=https://github.com/TomKing062/CVE-2022-38691_38692 target=_blank rel=noopener>TomKing062/CVE-2022-38691_38692: Let&rsquo;s control Secure Boot Chain ourselves.</a></p><p>主要流程</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>gen_fdl1-dl fdl1.bin <span class=c1># 生成fdl1-dl.bin</span>
+</span></span><span class=line><span class=cl>gen_spl-unlock-legacy u-boot-spl-16k-emmc.bin <span class=c1># 生成spl-unlock.bin            </span>
+</span></span><span class=line><span class=cl>CVE-2022-38691_38692/patcher ./CVE-2022-38691_38692/cfg/ud710.cfg fdl1-dl.bin
+</span></span><span class=line><span class=cl>CVE-2022-38691_38692/patcher ./CVE-2022-38691_38692/cfg/ud710.cfg spl-unlock.bin 
+</span></span></code></pre></td></tr></table></div></div><p>打开spd_dump后运行fdl1-dl.bin，过签名验证成功运行！</p><p>原理是利用了一个堆栈溢出漏洞跳过了签名验证</p><h3 id=2-跳过对fdl2uboot的签名验证>2. 跳过对fdl2/uboot的签名验证</h3><p><a class=link href=https://github.com/TomKing062/unisoc_chipram_signcheck_exploit target=_blank rel=noopener>TomKing062/unisoc_chipram_signcheck_exploit: a persistent sign check bypass in chipram and early postrom</a></p><p>第一种方法<a class=link href=https://github.com/TomKing062/unisoc_chipram_signcheck_exploit/tree/main/Patch-Post-Verification target=_blank rel=noopener>Patch-Post-Verification</a>要用二进制编辑器编辑，我也不知道怎么编辑，还是使用第二种方法吧，简单无脑编译运行就行了<a class=link href=https://github.com/TomKing062/unisoc_chipram_signcheck_exploit/tree/main/Patch-Pre-Verification target=_blank rel=noopener>Patch-Pre-Verification</a></p><p>编译成可执行文件并且运行</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 这里的sml.bin是原厂的镜像，用来提供参考的，也可以用teecfg</span>
+</span></span><span class=line><span class=cl>bsp_sign_fxxker_for_uboot sml.bin u-boot.bin u-boot-fucked.bin
+</span></span><span class=line><span class=cl>bsp_sign_fxxker_for_uboot sml.bin fdl2.bin fdl2-fucked.bin
+</span></span></code></pre></td></tr></table></div></div><p>然后把生成的u-boot-fucked.bin 刷入后，成功重启进系统</p><h3 id=3-跳过avb的签名验证>3. 跳过avb的签名验证</h3><p><a class=link href=https://github.com/q77190858/noavb_or_resign_with_magisk target=_blank rel=noopener>https://github.com/q77190858/noavb_or_resign_with_magisk</a>使用action自动生成，用noavbv2生成的文件，记得u-boot-spl-16k-sign.bin不用刷，刷了黑屏，其他文件刷进去后正常启动进系统</p><p>进入fastboot后，现在第三方的boot.img似乎可以刷进去启动了，但是twrp recovery还是无法启动</p><p>现在发现用spd_dump刷入twrp recovery后，重启进入系统，再adb reboot recovery后，会恢复成原来的官方recovery，神了</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bat data-lang=bat><span class=line><span class=cl>w recovery recovery2.img
+</span></span><span class=line><span class=cl>r recovery
+</span></span></code></pre></td></tr></table></div></div><p>刷入再读取，用bc二进制比较一下，发现完全相同，但是只要进系统就恢复成原来的recovery了</p><p>经过群里大佬提醒，原理是recovery-from-boot.p<a class=link href=https://yspjack.github.io/2023/08/26/Extract-Android-Recovery-Image/ target=_blank rel=noopener>生成 Android recovery 镜像 | Hexo</a>，开机检查rec哈希不对就会自动触发生成新的rec，服务在init.rc里面</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>service flash_recovery /system/bin/install-recovery.sh
+</span></span><span class=line><span class=cl>    class main
+</span></span><span class=line><span class=cl>    oneshot
+</span></span></code></pre></td></tr></table></div></div><div class=table-wrapper><table><thead><tr><th style=text-align:left>字段</th><th style=text-align:left>含义</th></tr></thead><tbody><tr><td style=text-align:left><code>service flash_recovery</code></td><td style=text-align:left>定义一个名为 <code>flash_recovery</code> 的服务</td></tr><tr><td style=text-align:left><code>/system/bin/install-recovery.sh</code></td><td style=text-align:left>启动时执行的脚本路径</td></tr><tr><td style=text-align:left><code>class main</code></td><td style=text-align:left>属于 <code>main</code> 类，会在系统正常启动阶段被触发执行</td></tr><tr><td style=text-align:left><code>oneshot</code></td><td style=text-align:left>只执行一次，不会常驻后台，执行完就退出</td></tr></tbody></table></div><p><code>install-recovery.sh</code> 一般是 OTA 升级或厂商预置的脚本，典型操作包括：</p><ol><li><strong>读取 <code>/system/recovery-from-boot.p</code></strong>（一个补丁文件）</li><li><strong>用 <code>applypatch</code> 工具</strong>，将当前内核（boot）分区打补丁，生成官方 Recovery 镜像</li><li><strong>将生成的 Recovery 写入 Recovery 分区</strong></li></ol><p>尝试spd_dump刷完twrp后，直接进入recovery</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bat data-lang=bat><span class=line><span class=cl>reboot-recovery
+</span></span></code></pre></td></tr></table></div></div><p>终于看到梦寐以求的twrp界面了！！</p><img src=reboot-recovery.jpg alt=reboot-recovery style=zoom:25%><h2 id=五修复各种bug>五、修复各种bug</h2><h3 id=4-修复twrp触摸屏>4. 修复twrp触摸屏</h3><p>修复一下触摸屏驱动，现在触摸屏没法用，因为是原版的rec不用触控所以默认不支持，但是正常启动系统是支持的，看了一下固件文件夹，应该是synaptics生产的触控ic</p><p>参考这个[Android Recovery移植实战：从原理到TWRP适配 - CSDN文库](<a class=link href=https://wenku.csdn.net/column/x95pgt679ji#4.2 target=_blank rel=noopener>https://wenku.csdn.net/column/x95pgt679ji#4.2</a> 触摸屏驱动调试)</p><p>正常启动手机，root了进系统，lsmod列出驱动模块</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>AURORA:/ <span class=c1># lsmod</span>
+</span></span><span class=line><span class=cl>Module                  Size  Used by
+</span></span><span class=line><span class=cl>sprdwl_ng             <span class=m>323584</span>  <span class=m>0</span>
+</span></span><span class=line><span class=cl>flash_ic_sc2703        <span class=m>16384</span>  <span class=m>0</span>
+</span></span><span class=line><span class=cl>npu_img_vha            <span class=m>98304</span>  <span class=m>1</span>
+</span></span><span class=line><span class=cl>npu_img_mem            <span class=m>73728</span>  <span class=m>1</span> npu_img_vha
+</span></span><span class=line><span class=cl>sprd_fm                <span class=m>49152</span>  <span class=m>0</span>
+</span></span><span class=line><span class=cl>sprdbt_tty             <span class=m>24576</span>  <span class=m>0</span>
+</span></span><span class=line><span class=cl>sprd_vdsp             <span class=m>122880</span>  <span class=m>0</span>
+</span></span><span class=line><span class=cl>microarray_fp          <span class=m>90112</span>  <span class=m>2</span>
+</span></span><span class=line><span class=cl>sprd_fd                <span class=m>28672</span>  <span class=m>0</span>
+</span></span><span class=line><span class=cl>mmdvfs                <span class=m>110592</span>  <span class=m>0</span>
+</span></span><span class=line><span class=cl>sprd_cpp               <span class=m>45056</span>  <span class=m>0</span>
+</span></span><span class=line><span class=cl>sprd_camera           <span class=m>471040</span>  <span class=m>1</span> sprd_fd
+</span></span><span class=line><span class=cl>sprd_flash_drv         <span class=m>16384</span>  <span class=m>2</span> flash_ic_sc2703,sprd_camera
+</span></span><span class=line><span class=cl>sprd_sensor            <span class=m>77824</span>  <span class=m>1</span> sprd_camera
+</span></span><span class=line><span class=cl>synaptics_dsx_td4310   <span class=m>159744</span>  <span class=m>0</span>
+</span></span><span class=line><span class=cl>pvrsrvkm             <span class=m>1642496</span>  <span class=m>76</span>
+</span></span><span class=line><span class=cl>synaptics_td4320_spi_ts   <span class=m>192512</span>  <span class=m>0</span>
+</span></span></code></pre></td></tr></table></div></div><p>只需要insmod加载这两个驱动就行了synaptics_dsx_td4310，synaptics_td4320_spi_ts</p><p>验证设备输入节点</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>AURORA:/ $ getevent -l
+</span></span><span class=line><span class=cl>add device 1: /dev/input/event5
+</span></span><span class=line><span class=cl>  name:     <span class=s2>&#34;madev&#34;</span>
+</span></span><span class=line><span class=cl>add device 2: /dev/input/event4
+</span></span><span class=line><span class=cl>  name:     <span class=s2>&#34;synaptics_tcm_touch&#34;</span>
+</span></span><span class=line><span class=cl>could not get driver version <span class=k>for</span> /dev/input/mouse0, Not a typewriter
+</span></span><span class=line><span class=cl>add device 3: /dev/input/event2
+</span></span><span class=line><span class=cl>  name:     <span class=s2>&#34;sprdphone-sc2730 Headset Jack&#34;</span>
+</span></span><span class=line><span class=cl>......
+</span></span></code></pre></td></tr></table></div></div><p>我们加载成功后内核会自动在/dev/input/event4生成触摸屏的设备文件</p><p>把这个insmod命令写到init.recovery.common.rc文件里面去，开机init就会自动运行命令</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>on post-fs-data
+</span></span><span class=line><span class=cl>	......
+</span></span><span class=line><span class=cl>	#insmode synaptics TP ko
+</span></span><span class=line><span class=cl>    insmod /vendor/socko/synaptics_dsx_td4310.ko
+</span></span><span class=line><span class=cl>    insmod /vendor/socko/synaptics_td4320_spi_ts.ko
+</span></span><span class=line><span class=cl>    ......
+</span></span></code></pre></td></tr></table></div></div><p>但是后续安卓如何使用这个触摸屏设备文件呢？</p><p>ubuntu里挂载socko（也就是soc的ko内核模块文件）、system、vendor和product分区，全局grep搜索一下synaptics关键字</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>juju@ubuntu:~/rom/super_ext4$ sudo grep -irn <span class=s2>&#34;synaptics&#34;</span> .
+</span></span><span class=line><span class=cl>./vendor/etc/init/hw/init.common.rc:84:    <span class=c1>#insmode synaptics TP ko</span>
+</span></span><span class=line><span class=cl>./vendor/etc/init/hw/init.common.rc:85:    insmod <span class=si>${</span><span class=nv>ro</span><span class=p>.vendor.ko.mount.point</span><span class=si>}</span>/socko/synaptics_dsx_td4310.ko
+</span></span><span class=line><span class=cl>./vendor/etc/init/hw/init.ud710_7h10.rc:21:    insmod <span class=si>${</span><span class=nv>ro</span><span class=p>.vendor.ko.mount.point</span><span class=si>}</span>/socko/synaptics_td4320_spi_ts.ko
+</span></span><span class=line><span class=cl>./vendor/etc/init/hw/init.factorytest.rc:43:    insmod <span class=si>${</span><span class=nv>ro</span><span class=p>.vendor.ko.mount.point</span><span class=si>}</span>/socko/synaptics_dsx_td4310.ko
+</span></span><span class=line><span class=cl>./vendor/etc/init/hw/init.factorytest.rc:47:    insmod <span class=si>${</span><span class=nv>ro</span><span class=p>.vendor.ko.mount.point</span><span class=si>}</span>/socko/synaptics_td4320_spi_ts.ko
+</span></span><span class=line><span class=cl>./vendor/etc/PCBA.conf:68:sensor	Ts	synaptics_tcm_touch
+</span></span><span class=line><span class=cl>./vendor/usr/idc/synaptics_tcm.idc:26: * NOT PERMIT THE DISCLAIMER OF DIRECT DAMAGES OR ANY OTHER DAMAGES, SYNAPTICS<span class=err>&#39;</span>
+</span></span><span class=line><span class=cl>./vendor/usr/keylayout/synaptics_tcm.kl:2: * Copyright <span class=o>(</span>C<span class=o>)</span> 2017-2018 Synaptics Incorporated. All rights reserved.
+</span></span></code></pre></td></tr></table></div></div><p>除了找到了ko文件以外，还有idc文件和kl文件，问deepseek：idc和kl文件在触摸屏初始化中如何被调用，原来是自动化调用的，我们只需要把它们放到/system/usr/idc、/vendor/usr/idc或者/system/usr/keylayout、/vendor/usr/keylayout文件夹里面就行了，我这里就放vendor好了，反正都是些文本配置文件，也不大，全部拷贝到设备树文件夹去</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>juju@ubuntu:~/twrp-11/device/chinatelecom/AURORA/recovery/root$ ls vendor/usr/*
+</span></span><span class=line><span class=cl>vendor/usr/idc:
+</span></span><span class=line><span class=cl>adaptive_ts.idc         madev.idc       synaptics_dsx_i2c.idc
+</span></span><span class=line><span class=cl>focaltech_spi_ts.idc    nt36xxx_ts.idc  synaptics_tcm.idc
+</span></span><span class=line><span class=cl>focaltech_ts_T7510.idc  ssd20xx.idc
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>vendor/usr/keylayout:
+</span></span><span class=line><span class=cl>adaptive_ts.kl  gpio-keys.kl  madev.kl  synaptics_tcm.kl
+</span></span></code></pre></td></tr></table></div></div><p>重新编译，刷入系统，成功启动！</p><h3 id=5-修复循环重启进入twrp>5. 修复循环重启进入twrp</h3><p>刷完twrp后循环进入twrp，刷入官方的rec后重启进入rec，选择重启后进系统，先恢复过来，先不管了</p><p>进一步修复twrp循环重启</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>dd <span class=k>if</span><span class=o>=</span>/dev/zero <span class=nv>of</span><span class=o>=</span>/dev/block/by-name/misc <span class=nv>bs</span><span class=o>=</span><span class=m>1</span> <span class=nv>count</span><span class=o>=</span><span class=m>32</span>
+</span></span><span class=line><span class=cl>reboot
+</span></span></code></pre></td></tr></table></div></div><p>在twrp终端里面一个一个敲真折磨，但是重启后就正常进系统了，现在也好了</p><p>不想折磨的话就进spd_dump擦除misc分区再重启就进系统了</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bat data-lang=bat><span class=line><span class=cl>e misc
+</span></span><span class=line><span class=cl>reset
+</span></span></code></pre></td></tr></table></div></div><p>原理是 <code>misc</code> 分区中的一条“重启到 Recovery”指令没有被清除。Bootloader 每次启动时读到这条指令，就会再次进入 Recovery，形成循环</p><p><strong>核心原理：BCB 结构</strong></p><p><code>misc</code> 分区是 Android 系统中一个用于系统与 Bootloader 通信的专用区域。其最关键的部分，在起始的 2KB 空间里，存放着名为 <code>bootloader_message</code> 的结构体。这个结构体定义在 AOSP 的源码中，主要包含三个字段：</p><ul><li><strong><code>command[32]</code></strong>: 核心指令字段。Bootloader 在启动时会检查此字段，并根据其值决定启动模式。</li><li><strong><code>recovery[768]</code></strong>: 用于向 Recovery 模式传递额外参数，例如在重启后自动执行刷机脚本。</li><li><strong><code>status[32]</code></strong>: 用于 bootloader 向系统返回操作状态（现已较少使用）</li></ul><h3 id=6-修复震动马达>6. 修复震动马达</h3><p><a class=link href=https://www.cnblogs.com/mmjio/p/20034309#commentform#1#!comments target=_blank rel=noopener>OrangeFox 适配 Redmi K60 Pro：从源头解决 Recovery 点击卡顿和振动问题 - 妙妙jio - 博客园</a></p><p>我发现这个设备有没有类似led控制马达的字符设备</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>AURORA:/ <span class=c1># find / -name vibrat* 2&gt;/dev/null</span>
+</span></span><span class=line><span class=cl>/vendor/lib64/hw/vibrator.default.so
+</span></span><span class=line><span class=cl>/vendor/lib64/hw/vibrator.ud710.so
+</span></span><span class=line><span class=cl>/vendor/lib/hw/vibrator.default.so
+</span></span><span class=line><span class=cl>/vendor/lib/hw/vibrator.ud710.so
+</span></span><span class=line><span class=cl>/sys/firmware/devicetree/base/soc/aon/spi@32100000/pmic@0/vibrator@1b90
+</span></span></code></pre></td></tr></table></div></div><p>用的是HAL的框架，运行一个后台服务，可以用cmd驱动震动，但是后台服务框架很大，放进rec不现实</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>cmd vibrator vibtate <span class=m>500</span> <span class=c1>#500ms</span>
+</span></span></code></pre></td></tr></table></div></div><p>但是有event设备</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>AURORA:/ <span class=c1># getevent -l</span>
+</span></span><span class=line><span class=cl>add device 1: /dev/input/event5
+</span></span><span class=line><span class=cl>  name:     <span class=s2>&#34;madev&#34;</span>
+</span></span><span class=line><span class=cl>add device 2: /dev/input/event4
+</span></span><span class=line><span class=cl>  name:     <span class=s2>&#34;synaptics_tcm_touch&#34;</span>
+</span></span><span class=line><span class=cl>could not get driver version <span class=k>for</span> /dev/input/mouse0, Not a typewriter
+</span></span><span class=line><span class=cl>could not get driver version <span class=k>for</span> /dev/input/mice, Not a typewriter
+</span></span><span class=line><span class=cl>add device 3: /dev/input/event2
+</span></span><span class=line><span class=cl>  name:     <span class=s2>&#34;sprdphone-sc2730 Headset Jack&#34;</span>
+</span></span><span class=line><span class=cl>add device 4: /dev/input/event3
+</span></span><span class=line><span class=cl>  name:     <span class=s2>&#34;sprdphone-sc2730 Headset Keyboard&#34;</span>
+</span></span><span class=line><span class=cl>add device 5: /dev/input/event1
+</span></span><span class=line><span class=cl>  name:     <span class=s2>&#34;gpio-keys&#34;</span>
+</span></span><span class=line><span class=cl>add device 6: /dev/input/event0
+</span></span><span class=line><span class=cl>  name:     <span class=s2>&#34;sc27xx:vibrator&#34;</span>
+</span></span></code></pre></td></tr></table></div></div><p>看到input/event0明显是一个马达</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>AURORA:/ <span class=c1># getevent -il /dev/input/event0</span>
+</span></span><span class=line><span class=cl>add device 1: /dev/input/event0
+</span></span><span class=line><span class=cl>  bus:      <span class=m>0000</span>
+</span></span><span class=line><span class=cl>  vendor    <span class=m>0000</span>
+</span></span><span class=line><span class=cl>  product   <span class=m>0000</span>
+</span></span><span class=line><span class=cl>  version   <span class=m>0000</span>
+</span></span><span class=line><span class=cl>  name:     <span class=s2>&#34;sc27xx:vibrator&#34;</span>
+</span></span><span class=line><span class=cl>  location: <span class=s2>&#34;&#34;</span>
+</span></span><span class=line><span class=cl>  id:       <span class=s2>&#34;&#34;</span>
+</span></span><span class=line><span class=cl>  version:  1.0.1
+</span></span><span class=line><span class=cl>  events:
+</span></span><span class=line><span class=cl>    FF  <span class=o>(</span>0015<span class=o>)</span>: FF_RUMBLE             FF_PERIODIC           FF_SQUARE             FF_TRIANGLE
+</span></span><span class=line><span class=cl>                FF_SINE               FF_GAIN
+</span></span><span class=line><span class=cl>  input props:
+</span></span><span class=line><span class=cl>    &lt;none&gt;
+</span></span></code></pre></td></tr></table></div></div><p>还有各种FF震动效果</p><p>尝试手写一个程序静态编译推送到设备看是否正常震动</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span><span class=lnt>55
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;stdio.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;stdlib.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;string.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;fcntl.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;unistd.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;linux/input.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;sys/ioctl.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=kt>int</span> <span class=n>fd</span> <span class=o>=</span> <span class=nf>open</span><span class=p>(</span><span class=s>&#34;/dev/input/event0&#34;</span><span class=p>,</span> <span class=n>O_RDWR</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>fd</span> <span class=o>&lt;</span> <span class=mi>0</span><span class=p>)</span> <span class=p>{</span> <span class=nf>perror</span><span class=p>(</span><span class=s>&#34;open&#34;</span><span class=p>);</span> <span class=k>return</span> <span class=mi>1</span><span class=p>;</span> <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>struct</span> <span class=n>ff_effect</span> <span class=n>effect</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=nf>memset</span><span class=p>(</span><span class=o>&amp;</span><span class=n>effect</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=k>sizeof</span><span class=p>(</span><span class=n>effect</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>    <span class=n>effect</span><span class=p>.</span><span class=n>type</span> <span class=o>=</span> <span class=n>FF_RUMBLE</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>effect</span><span class=p>.</span><span class=n>id</span> <span class=o>=</span> <span class=o>-</span><span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>effect</span><span class=p>.</span><span class=n>u</span><span class=p>.</span><span class=n>rumble</span><span class=p>.</span><span class=n>strong_magnitude</span> <span class=o>=</span> <span class=mh>0x8000</span><span class=p>;</span> <span class=c1>// 强度 0~0xFFFF
+</span></span></span><span class=line><span class=cl>    <span class=n>effect</span><span class=p>.</span><span class=n>u</span><span class=p>.</span><span class=n>rumble</span><span class=p>.</span><span class=n>weak_magnitude</span> <span class=o>=</span> <span class=mh>0x8000</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>effect</span><span class=p>.</span><span class=n>replay</span><span class=p>.</span><span class=n>length</span> <span class=o>=</span> <span class=mi>1000</span><span class=p>;</span> <span class=c1>// 毫秒
+</span></span></span><span class=line><span class=cl>    <span class=n>effect</span><span class=p>.</span><span class=n>replay</span><span class=p>.</span><span class=n>delay</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// 上传效果
+</span></span></span><span class=line><span class=cl>    <span class=kt>int</span> <span class=n>effect_id</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=nf>ioctl</span><span class=p>(</span><span class=n>fd</span><span class=p>,</span> <span class=n>EVIOCSFF</span><span class=p>,</span> <span class=o>&amp;</span><span class=n>effect</span><span class=p>)</span> <span class=o>==</span> <span class=o>-</span><span class=mi>1</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nf>perror</span><span class=p>(</span><span class=s>&#34;EVIOCSFF&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=nf>close</span><span class=p>(</span><span class=n>fd</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=n>effect_id</span> <span class=o>=</span> <span class=n>effect</span><span class=p>.</span><span class=n>id</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// 播放效果
+</span></span></span><span class=line><span class=cl>    <span class=k>struct</span> <span class=n>input_event</span> <span class=n>play</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=nf>memset</span><span class=p>(</span><span class=o>&amp;</span><span class=n>play</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=k>sizeof</span><span class=p>(</span><span class=n>play</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>    <span class=n>play</span><span class=p>.</span><span class=n>type</span> <span class=o>=</span> <span class=n>EV_FF</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>play</span><span class=p>.</span><span class=n>code</span> <span class=o>=</span> <span class=n>effect_id</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>play</span><span class=p>.</span><span class=n>value</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span> <span class=c1>// 1=播放, 0=停止
+</span></span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=nf>write</span><span class=p>(</span><span class=n>fd</span><span class=p>,</span> <span class=o>&amp;</span><span class=n>play</span><span class=p>,</span> <span class=k>sizeof</span><span class=p>(</span><span class=n>play</span><span class=p>))</span> <span class=o>&lt;</span> <span class=mi>0</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nf>perror</span><span class=p>(</span><span class=s>&#34;write&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// 发送同步事件（有些实现需要）
+</span></span></span><span class=line><span class=cl>    <span class=c1>//struct input_event syn;
+</span></span></span><span class=line><span class=cl>    <span class=c1>//memset(&amp;syn, 0, sizeof(syn));
+</span></span></span><span class=line><span class=cl>    <span class=c1>//syn.type = EV_SYN;
+</span></span></span><span class=line><span class=cl>    <span class=c1>//syn.code = SYN_REPORT;
+</span></span></span><span class=line><span class=cl>    <span class=c1>//syn.value = 0;
+</span></span></span><span class=line><span class=cl>    <span class=c1>//write(fd, &amp;syn, sizeof(syn));
+</span></span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=nf>sleep</span><span class=p>(</span><span class=mi>1</span><span class=p>);</span> <span class=c1>// 振动持续由 replay.length 控制，可再发送停止
+</span></span></span><span class=line><span class=cl>    <span class=c1>//play.value = 0;
+</span></span></span><span class=line><span class=cl>    <span class=c1>//write(fd, &amp;play, sizeof(play));
+</span></span></span><span class=line><span class=cl>    <span class=c1>//write(fd, &amp;syn, sizeof(syn));
+</span></span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=nf>close</span><span class=p>(</span><span class=n>fd</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>使用bsp文件夹里的linaro编译器静态编译</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>ud710_bsp/toolchain/prebuilts/gcc/linaro-x86/aarch64/gcc-linaro-4.8/gcc-linaro-4.8-2015.06-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-gcc test.c -static -o test2
+</span></span></code></pre></td></tr></table></div></div><p>成功驱动马达了</p><p>但是要修改twrp源码了，看能否后面推送到上游</p><p>考虑增加一个boardconfig.mk编译标志TW_SUPPORT_INPUT_EVENT_VIBRATOR_HAPTICS</p><p>定义了一个可驱动马达的input event文件路径</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-makefile data-lang=makefile><span class=line><span class=cl><span class=c># /home/juju/twrp-11/device/chinatelecom/AURORA/BoardConfig.mk
+</span></span></span><span class=line><span class=cl><span class=c># Vibrator
+</span></span></span><span class=line><span class=cl><span class=nv>TW_SUPPORT_INPUT_EVENT_VIBRATOR_HAPTICS</span> <span class=o>:=</span> /dev/input/event0
+</span></span></code></pre></td></tr></table></div></div><p>然后把这变量导入到编译系统里<a class=link href=https://blog.csdn.net/u011494885/article/details/83585735 target=_blank rel=noopener>在Android.mk中引用Boardconfig中的变量_boardconfig.mk位置-CSDN博客</a></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=c1>// twrp-11/vendor/twrp/soong/makevars.mk
+</span></span></span><span class=line><span class=cl><span class=nl>EXPORT_TO_SOONG</span> <span class=p>:</span><span class=o>=</span> \
+</span></span><span class=line><span class=cl>    <span class=p>......</span>
+</span></span><span class=line><span class=cl>    <span class=n>TW_SUPPORT_INPUT_1_2_HAPTICS</span> \
+</span></span><span class=line><span class=cl>    <span class=n>TW_SUPPORT_INPUT_EVENT_VIBRATOR_HAPTICS</span> \
+</span></span><span class=line><span class=cl>    <span class=n>TW_TARGET_USES_QCOM_BSP</span> \
+</span></span><span class=line><span class=cl>    <span class=p>......</span>
+</span></span></code></pre></td></tr></table></div></div><p>加入到cflags里面</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-go data-lang=go><span class=line><span class=cl><span class=c1>// /twrp-11/bootable/recovery/minuitwrp/libminuitwrp_defaults.go</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=k>if</span><span class=w> </span><span class=nf>getMakeVars</span><span class=p>(</span><span class=nx>ctx</span><span class=p>,</span><span class=w> </span><span class=s>&#34;TW_SUPPORT_INPUT_EVENT_VIBRATOR_HAPTICS&#34;</span><span class=p>)</span><span class=w> </span><span class=o>!=</span><span class=w> </span><span class=s>&#34;&#34;</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>		</span><span class=nx>addflag</span><span class=o>:=</span><span class=s>&#34;-DUSE_INPUT_EVENT_VIBRATOR_HAPTICS=&#34;</span><span class=o>+</span><span class=w> </span><span class=nf>getMakeVars</span><span class=p>(</span><span class=nx>ctx</span><span class=p>,</span><span class=w> </span><span class=s>&#34;TW_SUPPORT_INPUT_EVENT_VIBRATOR_HAPTICS&#34;</span><span class=p>)</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>		</span><span class=nx>cflags</span><span class=w> </span><span class=p>=</span><span class=w> </span><span class=nb>append</span><span class=p>(</span><span class=nx>cflags</span><span class=p>,</span><span class=nx>addflag</span><span class=w> </span><span class=p>)</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>	</span><span class=p>}</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><p>修改/home/juju/twrp-11/bootable/recovery/minuitwrp/events.cpp源码</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span><span class=lnt>55
+</span><span class=lnt>56
+</span><span class=lnt>57
+</span><span class=lnt>58
+</span><span class=lnt>59
+</span><span class=lnt>60
+</span><span class=lnt>61
+</span><span class=lnt>62
+</span><span class=lnt>63
+</span><span class=lnt>64
+</span><span class=lnt>65
+</span><span class=lnt>66
+</span><span class=lnt>67
+</span><span class=lnt>68
+</span><span class=lnt>69
+</span><span class=lnt>70
+</span><span class=lnt>71
+</span><span class=lnt>72
+</span><span class=lnt>73
+</span><span class=lnt>74
+</span><span class=lnt>75
+</span><span class=lnt>76
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=c1>// /home/juju/twrp-11/bootable/recovery/minuitwrp/events.cpp
+</span></span></span><span class=line><span class=cl><span class=k>static</span> <span class=kt>int</span> <span class=n>input_event_haptics_fd</span> <span class=o>=</span> <span class=o>-</span><span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=k>static</span> <span class=kt>unsigned</span> <span class=kt>long</span> <span class=n>input_event_haptics_uses_rumble</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=k>static</span> <span class=kt>signed</span> <span class=kt>short</span> <span class=n>input_event_haptics_effect_id</span><span class=o>=-</span><span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=k>static</span> <span class=kt>int</span> <span class=nf>input_event_ff_open</span><span class=p>(</span><span class=k>const</span> <span class=kt>char</span> <span class=o>*</span><span class=n>input_dev_path</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>input_event_haptics_fd</span> <span class=o>&gt;=</span> <span class=mi>0</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>input_event_haptics_fd</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kt>int</span> <span class=n>fd</span> <span class=o>=</span> <span class=n>open</span><span class=p>(</span><span class=n>input_dev_path</span><span class=p>,</span> <span class=n>O_RDWR</span> <span class=o>|</span> <span class=n>O_CLOEXEC</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>fd</span> <span class=o>&lt;</span> <span class=mi>0</span><span class=p>){</span>
+</span></span><span class=line><span class=cl>        <span class=n>LOGI</span><span class=p>(</span><span class=s>&#34;Cannot open file %s</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>input_dev_path</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=o>-</span><span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kt>unsigned</span> <span class=kt>long</span> <span class=n>ff_bitmask</span><span class=p>[</span><span class=n>NBITS</span><span class=p>(</span><span class=n>FF_MAX</span><span class=p>)];</span>
+</span></span><span class=line><span class=cl>    <span class=n>memset</span><span class=p>(</span><span class=n>ff_bitmask</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=k>sizeof</span><span class=p>(</span><span class=n>ff_bitmask</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>ioctl</span><span class=p>(</span><span class=n>fd</span><span class=p>,</span> <span class=n>EVIOCGBIT</span><span class=p>(</span><span class=n>EV_FF</span><span class=p>,</span> <span class=k>sizeof</span><span class=p>(</span><span class=n>ff_bitmask</span><span class=p>)),</span> <span class=n>ff_bitmask</span><span class=p>)</span> <span class=o>&lt;</span> <span class=mi>0</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>close</span><span class=p>(</span><span class=n>fd</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=n>LOGI</span><span class=p>(</span><span class=s>&#34;Cannot ioctl file %s</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>input_dev_path</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=o>-</span><span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>test_bit</span><span class=p>(</span><span class=n>FF_CONSTANT</span><span class=p>,</span> <span class=n>ff_bitmask</span><span class=p>)</span> <span class=o>||</span> <span class=n>test_bit</span><span class=p>(</span><span class=n>FF_RUMBLE</span><span class=p>,</span> <span class=n>ff_bitmask</span><span class=p>))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>input_event_haptics_fd</span> <span class=o>=</span> <span class=n>fd</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>        <span class=n>input_event_haptics_uses_rumble</span> <span class=o>=</span> <span class=o>!</span><span class=n>test_bit</span><span class=p>(</span><span class=n>FF_CONSTANT</span><span class=p>,</span> <span class=n>ff_bitmask</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>input_event_haptics_fd</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=n>LOGI</span><span class=p>(</span><span class=s>&#34;unsupported Force Feedback ff_bitmask</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>close</span><span class=p>(</span><span class=n>fd</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=o>-</span><span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=k>static</span> <span class=kt>int</span> <span class=nf>input_event_ff_vibrate</span><span class=p>(</span><span class=kt>int</span> <span class=n>timeout_ms</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>input_event_haptics_fd</span> <span class=o>&lt;</span> <span class=mi>0</span><span class=p>){</span>
+</span></span><span class=line><span class=cl>        <span class=n>LOGI</span><span class=p>(</span><span class=s>&#34;wrong fd %d</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span><span class=n>input_event_haptics_fd</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=o>-</span><span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>input_event_haptics_effect_id</span><span class=o>&gt;=</span><span class=mi>0</span> <span class=o>&amp;&amp;</span><span class=n>ioctl</span><span class=p>(</span><span class=n>input_event_haptics_fd</span><span class=p>,</span> <span class=n>EVIOCRMFF</span><span class=p>,</span> <span class=n>input_event_haptics_effect_id</span><span class=p>)</span> <span class=o>==</span> <span class=o>-</span><span class=mi>1</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>LOGI</span><span class=p>(</span><span class=s>&#34;fail to remove effect </span><span class=se>\n</span><span class=s>&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>struct</span> <span class=nc>ff_effect</span> <span class=n>effect</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>memset</span><span class=p>(</span><span class=o>&amp;</span><span class=n>effect</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=k>sizeof</span><span class=p>(</span><span class=n>effect</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>    <span class=n>effect</span><span class=p>.</span><span class=n>id</span> <span class=o>=</span> <span class=o>-</span><span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>effect</span><span class=p>.</span><span class=n>replay</span><span class=p>.</span><span class=n>length</span> <span class=o>=</span> <span class=n>timeout_ms</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>effect</span><span class=p>.</span><span class=n>replay</span><span class=p>.</span><span class=n>delay</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>input_event_haptics_uses_rumble</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>effect</span><span class=p>.</span><span class=n>type</span> <span class=o>=</span> <span class=n>FF_RUMBLE</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>        <span class=n>effect</span><span class=p>.</span><span class=n>u</span><span class=p>.</span><span class=n>rumble</span><span class=p>.</span><span class=n>strong_magnitude</span> <span class=o>=</span> <span class=mh>0x7fff</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>        <span class=n>effect</span><span class=p>.</span><span class=n>u</span><span class=p>.</span><span class=n>rumble</span><span class=p>.</span><span class=n>weak_magnitude</span> <span class=o>=</span> <span class=mh>0x7fff</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>effect</span><span class=p>.</span><span class=n>type</span> <span class=o>=</span> <span class=n>FF_CONSTANT</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>        <span class=n>effect</span><span class=p>.</span><span class=n>u</span><span class=p>.</span><span class=n>constant</span><span class=p>.</span><span class=n>level</span> <span class=o>=</span> <span class=mh>0x5fff</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>ioctl</span><span class=p>(</span><span class=n>input_event_haptics_fd</span><span class=p>,</span> <span class=n>EVIOCSFF</span><span class=p>,</span> <span class=o>&amp;</span><span class=n>effect</span><span class=p>)</span> <span class=o>&lt;</span> <span class=mi>0</span><span class=p>){</span>
+</span></span><span class=line><span class=cl>        <span class=n>LOGI</span><span class=p>(</span><span class=s>&#34;fail to regist effect </span><span class=se>\n</span><span class=s>&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=o>-</span><span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>input_event_haptics_effect_id</span> <span class=o>=</span> <span class=n>effect</span><span class=p>.</span><span class=n>id</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>struct</span> <span class=nc>input_event</span> <span class=n>play</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>memset</span><span class=p>(</span><span class=o>&amp;</span><span class=n>play</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=k>sizeof</span><span class=p>(</span><span class=n>play</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>    <span class=n>play</span><span class=p>.</span><span class=n>type</span> <span class=o>=</span> <span class=n>EV_FF</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>play</span><span class=p>.</span><span class=n>code</span> <span class=o>=</span> <span class=n>input_event_haptics_effect_id</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>play</span><span class=p>.</span><span class=n>value</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>write</span><span class=p>(</span><span class=n>input_event_haptics_fd</span><span class=p>,</span> <span class=o>&amp;</span><span class=n>play</span><span class=p>,</span> <span class=k>sizeof</span><span class=p>(</span><span class=n>play</span><span class=p>))</span> <span class=o>&lt;</span><span class=mi>0</span><span class=p>){</span>
+</span></span><span class=line><span class=cl>        <span class=n>LOGI</span><span class=p>(</span><span class=s>&#34;fail to play effect </span><span class=se>\n</span><span class=s>&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=o>-</span><span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=mi>0</span> <span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>增加两个函数input_event_ff_open打开fd，input_event_ff_vibrate播放震动效果</p><p>在vibrator函数中使用条件编译</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=kt>int</span> <span class=nf>vibrate</span><span class=p>(</span><span class=kt>int</span> <span class=n>timeout_ms</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl><span class=p>......</span>
+</span></span><span class=line><span class=cl><span class=cp>#ifdef USE_QTI_HAPTICS
+</span></span></span><span class=line><span class=cl>    <span class=n>android</span><span class=o>::</span><span class=n>sp</span><span class=o>&lt;</span><span class=n>android</span><span class=o>::</span><span class=n>hardware</span><span class=o>::</span><span class=n>vibrator</span><span class=o>::</span><span class=n>V1_2</span><span class=o>::</span><span class=n>IVibrator</span><span class=o>&gt;</span> <span class=n>vib</span> <span class=o>=</span> <span class=n>android</span><span class=o>::</span><span class=n>hardware</span><span class=o>::</span><span class=n>vibrator</span><span class=o>::</span><span class=n>V1_2</span><span class=o>::</span><span class=n>IVibrator</span><span class=o>::</span><span class=n>getService</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>vib</span> <span class=o>!=</span> <span class=k>nullptr</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>vib</span><span class=o>-&gt;</span><span class=n>on</span><span class=p>((</span><span class=kt>uint32_t</span><span class=p>)</span><span class=n>timeout_ms</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>......</span>
+</span></span><span class=line><span class=cl><span class=cp>#elif defined(USE_INPUT_EVENT_VIBRATOR_HAPTICS)
+</span></span></span><span class=line><span class=cl>    <span class=cm>/* Some devices like qcom and unisoc have /dev/input/eventX file with device name *haptics or *vibrator
+</span></span></span><span class=line><span class=cl><span class=cm>    could drive vibrator by ioctl input event and effect */</span>
+</span></span><span class=line><span class=cl>    <span class=c1>//记得用EXPAND把宏展开成字符串，因为我们的定义里没有双引号
+</span></span></span><span class=line><span class=cl>     <span class=k>if</span> <span class=p>(</span><span class=n>input_event_ff_open</span><span class=p>(</span><span class=n>EXPAND</span><span class=p>(</span><span class=n>USE_INPUT_EVENT_VIBRATOR_HAPTICS</span><span class=p>))</span> <span class=o>&gt;=</span> <span class=mi>0</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    	<span class=n>input_event_ff_vibrate</span><span class=p>(</span><span class=n>timeout_ms</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span> 
+</span></span><span class=line><span class=cl><span class=cp>#else
+</span></span></span><span class=line><span class=cl>    <span class=p>......</span>
+</span></span><span class=line><span class=cl><span class=cp>#endif
+</span></span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>这个fd打开后不能马上关闭，不然播放震动就会立即停止</p><h3 id=7-修复没有usb调试和mtp>7. 修复没有usb调试和MTP</h3><p>rc脚本语法<a class=link href=https://blog.csdn.net/zhonglunshun/article/details/78615980 target=_blank rel=noopener>Android系统init进程启动及init.rc全解析_android initrc-CSDN博客</a></p><p>安卓9及以上都开始改成引入 FFS（FunctionFS）MTP 支持，使用 <code>libtwrpmtp-ffs.so</code> 库，通过 <code>configfs</code> 和 <code>functionfs</code> 来管理 USB gadget，手写一个开启adb的脚本，烧录进image进twrp终端执行一下bash adb.sh，结果就正常adb了，看来就是初始化的问题</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># adb.sh</span>
+</span></span><span class=line><span class=cl><span class=c1>#!/bin/bash</span>
+</span></span><span class=line><span class=cl><span class=nb>echo</span> 0x1782 &gt; /config/usb_gadget/g1/idVendor
+</span></span><span class=line><span class=cl><span class=nb>echo</span> 0x4001 &gt; /config/usb_gadget/g1/idProduct
+</span></span><span class=line><span class=cl><span class=nb>echo</span> <span class=s2>&#34;0123456789ABCDEF&#34;</span> &gt; /config/usb_gadget/g1/strings/0x409/serialnumber
+</span></span><span class=line><span class=cl><span class=nb>echo</span> <span class=s2>&#34;ADB&#34;</span> &gt; /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration
+</span></span><span class=line><span class=cl><span class=nb>echo</span> <span class=m>500</span> &gt; /config/usb_gadget/g1/configs/b.1/MaxPower
+</span></span><span class=line><span class=cl><span class=nb>echo</span> 0xc0 &gt; /config/usb_gadget/g1/configs/b.1/bmAttributes
+</span></span><span class=line><span class=cl>ln -s /config/usb_gadget/g1/functions/ffs.adb /config/usb_gadget/g1/configs/b.1/f2
+</span></span><span class=line><span class=cl><span class=nb>echo</span> <span class=s2>&#34;20f00000.dwc3&#34;</span> &gt; /config/usb_gadget/g1/UDC
+</span></span></code></pre></td></tr></table></div></div><p>这个初始化和开启的顺序在init.recovery.ud710_7h10.rc里面也有类似的，一步一步对比看看是哪步出了问题</p><p>原来是rec内部初始化usb的sysclass文件出问题了，在init.recovery.ud710_7h10.rc上修改</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-makefile data-lang=makefile><span class=line><span class=cl><span class=err>write</span> <span class=err>/config/usb_gadget/g1/strings/0x409/serialnumber</span> <span class=err>$ro.serialno</span>
+</span></span><span class=line><span class=cl><span class=err>write</span> <span class=err>/config/usb_gadget/g1/strings/0x409/serialnumber</span> <span class=err>${ro.serialno}</span>
+</span></span></code></pre></td></tr></table></div></div><p>就正常识别adb设备了，这个prop$ro.serialno没有加上花括号，导致twrp的init在解析$ro.serialno变量的时候不认识，于是设置成了空值</p><p>在命令行使用getprop可以获得当前ro.serialno属性值</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>AURORA:/ <span class=c1># getprop ro.serialno</span>
+</span></span><span class=line><span class=cl>S8090S00202120406032
+</span></span></code></pre></td></tr></table></div></div><p>可以看到是有值的，但是在rec里读class文件是空的，说明没有正常写进去</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>cat /config/usb_gadget/g1/strings/0x409/serialnumber
+</span></span><span class=line><span class=cl><span class=c1># 空</span>
+</span></span></code></pre></td></tr></table></div></div><p>这个ro.serialno是usb设备的序列号，虽然可以随便填，但是必须要有，如果没有win11就会报未识别的usb设备</p><p>而这个$ro.serialno写法是twrpdtgen工具从原厂的recovery的<code>/etc/init/hw/init.ud710_7h10.usb.rc</code>那里抄来的，</p><p><strong>但是原厂这么写就可以正常解析，猜测是原厂的init解析比较宽松，支持不加花括号的语法，但是twrp的init就不支持</strong></p><p>但是目前mtp还是没有，手写一个mtp.bash看看能否正常识别mtp</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># mtp.bash</span>
+</span></span><span class=line><span class=cl><span class=c1>#!/bin/bash</span>
+</span></span><span class=line><span class=cl><span class=nb>echo</span> 0x1782 &gt; /config/usb_gadget/g1/idVendor
+</span></span><span class=line><span class=cl><span class=nb>echo</span> 0x4001 &gt; /config/usb_gadget/g1/idProduct
+</span></span><span class=line><span class=cl><span class=nb>echo</span> <span class=s2>&#34;0123456789ABCDEF&#34;</span> &gt; /config/usb_gadget/g1/strings/0x409/serialnumber
+</span></span><span class=line><span class=cl><span class=nb>echo</span> <span class=s2>&#34;MTP&#34;</span> &gt; /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration
+</span></span><span class=line><span class=cl><span class=nb>echo</span> <span class=m>500</span> &gt; /config/usb_gadget/g1/configs/b.1/MaxPower
+</span></span><span class=line><span class=cl><span class=nb>echo</span> 0xc0 &gt; /config/usb_gadget/g1/configs/b.1/bmAttributes
+</span></span><span class=line><span class=cl>ln -s /config/usb_gadget/g1/functions/mtp.gs0 /config/usb_gadget/g1/configs/b.1/f1
+</span></span><span class=line><span class=cl><span class=nb>echo</span> <span class=s2>&#34;20f00000.dwc3&#34;</span> &gt; /config/usb_gadget/g1/UDC
+</span></span></code></pre></td></tr></table></div></div><p>正常识别了，继续检查twrp的生成的ramdisk的rc脚本，发现只有<code>on property:sys.usb.config=adb</code>情况的触发器，没有<code>sys.usb.config=mtp,adb</code>情况的触发器，导致系统在启动的时候默认设置的sys.usb.config=mtp,adb没有正常处理，但是进入twrp后手动关闭mtp后，sys.usb.config=adb的情况就正常处理了</p><p>但是按道理twrp自动生成了sys.usb.config=adb的情况，也会自动生成sys.usb.config=mtp,adb的情况呀，难道是boardconfig里没有添加相关的宏定义吗？</p><p>于是手动添加了一下相关的宏定义</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-makefile data-lang=makefile><span class=line><span class=cl><span class=c># enable MTP
+</span></span></span><span class=line><span class=cl><span class=nv>TW_HAS_MTP</span> <span class=o>:=</span> <span class=nb>true</span>
+</span></span></code></pre></td></tr></table></div></div><p>编译烧录进去还是看不到mtp设备</p><p>问了一下deepseek，说如果twrp里面没有，就要自己加，参考官方系统里的rc文件修改，在init.recovery.ud710_7h10.rc后面加上两个触发器</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>on property:sys.usb.config=mtp &amp;&amp; property:sys.usb.configfs=1
+</span></span><span class=line><span class=cl>    write /config/usb_gadget/g1/idVendor 0x1782
+</span></span><span class=line><span class=cl>    write /config/usb_gadget/g1/idProduct 0x4001
+</span></span><span class=line><span class=cl>    write /config/usb_gadget/g1/bcdDevice 0xffff
+</span></span><span class=line><span class=cl>    write /config/usb_gadget/g1/bDeviceClass 0
+</span></span><span class=line><span class=cl>    write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration &#34;mtp&#34;
+</span></span><span class=line><span class=cl>    rm /config/usb_gadget/g1/configs/b.1/f1
+</span></span><span class=line><span class=cl>    rm /config/usb_gadget/g1/configs/b.1/f2
+</span></span><span class=line><span class=cl>    rm /config/usb_gadget/g1/configs/b.1/f3
+</span></span><span class=line><span class=cl>    rm /config/usb_gadget/g1/configs/b.1/f4
+</span></span><span class=line><span class=cl>    rm /config/usb_gadget/g1/configs/b.1/f5
+</span></span><span class=line><span class=cl>    rm /config/usb_gadget/g1/configs/b.1/f6
+</span></span><span class=line><span class=cl>    rm /config/usb_gadget/g1/configs/b.1/f7
+</span></span><span class=line><span class=cl>    rm /config/usb_gadget/g1/configs/b.1/f8
+</span></span><span class=line><span class=cl>    rm /config/usb_gadget/g1/configs/b.1/f9
+</span></span><span class=line><span class=cl>    rm /config/usb_gadget/g1/configs/b.1/f10
+</span></span><span class=line><span class=cl>    rm /config/usb_gadget/g1/configs/b.1/f11
+</span></span><span class=line><span class=cl>    symlink /config/usb_gadget/g1/functions/mtp.gs0 /config/usb_gadget/g1/configs/b.1/f1
+</span></span><span class=line><span class=cl>    write /config/usb_gadget/g1/UDC ${sys.usb.controller}
+</span></span><span class=line><span class=cl>    setprop sys.usb.state ${sys.usb.config}
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>on property:sys.usb.ffs.ready=1 &amp;&amp; property:sys.usb.config=mtp,adb &amp;&amp; property:sys.usb.configfs=1
+</span></span><span class=line><span class=cl>    write /config/usb_gadget/g1/idVendor 0x1782
+</span></span><span class=line><span class=cl>    write /config/usb_gadget/g1/idProduct 0x4002
+</span></span><span class=line><span class=cl>    write /config/usb_gadget/g1/bcdDevice 0xffff
+</span></span><span class=line><span class=cl>    write /config/usb_gadget/g1/bDeviceClass 0
+</span></span><span class=line><span class=cl>    write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration &#34;mtp_adb&#34;
+</span></span><span class=line><span class=cl>    rm /config/usb_gadget/g1/configs/b.1/f1
+</span></span><span class=line><span class=cl>    rm /config/usb_gadget/g1/configs/b.1/f2
+</span></span><span class=line><span class=cl>    rm /config/usb_gadget/g1/configs/b.1/f3
+</span></span><span class=line><span class=cl>    rm /config/usb_gadget/g1/configs/b.1/f4
+</span></span><span class=line><span class=cl>    rm /config/usb_gadget/g1/configs/b.1/f5
+</span></span><span class=line><span class=cl>    rm /config/usb_gadget/g1/configs/b.1/f6
+</span></span><span class=line><span class=cl>    rm /config/usb_gadget/g1/configs/b.1/f7
+</span></span><span class=line><span class=cl>    rm /config/usb_gadget/g1/configs/b.1/f8
+</span></span><span class=line><span class=cl>    rm /config/usb_gadget/g1/configs/b.1/f9
+</span></span><span class=line><span class=cl>    rm /config/usb_gadget/g1/configs/b.1/f10
+</span></span><span class=line><span class=cl>    rm /config/usb_gadget/g1/configs/b.1/f11
+</span></span><span class=line><span class=cl>    symlink /config/usb_gadget/g1/functions/mtp.gs0 /config/usb_gadget/g1/configs/b.1/f1
+</span></span><span class=line><span class=cl>    symlink /config/usb_gadget/g1/functions/ffs.adb /config/usb_gadget/g1/configs/b.1/f2
+</span></span><span class=line><span class=cl>    write /config/usb_gadget/g1/UDC ${sys.usb.controller}
+</span></span><span class=line><span class=cl>    setprop sys.usb.state ${sys.usb.config}
+</span></span></code></pre></td></tr></table></div></div><p>比较关键的是记得把<code>rm /config/usb_gadget/g1/configs/b.1/f1</code>等等加上，因为前面的启动adb的工作里链接了adb的文件，如果不删除再次链接就出问题，所以每次切换usb的模式的时候都要记得删除链接，清除前面模式的遗留文件</p><h3 id=8修复内部存储乱码>8.修复内部存储乱码</h3><p>先明确 FBE 下两个关键存储区域：</p><ul><li><strong>DE（Device Encrypted，设备加密）</strong>：对应目录 <code>/data/user_de/0/</code>。此类数据在用户解锁设备前即可访问（如闹钟、锁屏服务）。其解密密钥由 <strong>Keymaster</strong> 生成并存储在硬件信任区（TEE），<strong>不依赖用户锁屏密码</strong>。</li><li><strong>CE（Credential Encrypted，凭据加密）</strong>：对应目录 <code>/data/user/0/ce/</code>。此类数据（如联系人、短信、个人应用数据）<strong>必须</strong>在用户输入锁屏密码（PIN/图案/密码）并通过验证后才能解密。</li></ul><p>最难最坑的就是这个了，调试了快一周时间，一开始我调试fscrypt_initialize_systemwide_keys报错放弃了，想着在twrp里面复刻一下安卓系统启动时解密的流程，也就是</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>keymaster-&gt;vold-&gt;keystore-&gt;gatekeeper
+</span></span></code></pre></td></tr></table></div></div><p>调试到vold放弃了，依赖太多太复杂，还是selinux的限制，于是还是想着转头依赖twrp内置的解密机制，不过这个时候已经对vold的机制了解差不多了，vold依赖了libfscrypt库进行解密，而twrp也内置了libfscrypt库支持，因此完全可以用twrp进行解密</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># FBE / Crypto</span>
+</span></span><span class=line><span class=cl>TW_INCLUDE_CRYPTO :<span class=o>=</span> <span class=nb>true</span>
+</span></span><span class=line><span class=cl>TW_INCLUDE_CRYPTO_FBE :<span class=o>=</span> <span class=nb>true</span>
+</span></span><span class=line><span class=cl>TW_USE_FSCRYPT_POLICY :<span class=o>=</span> <span class=m>1</span>
+</span></span><span class=line><span class=cl><span class=c1>#TW_CRYPTO_USE_SYSTEM_VOLD := keymaster</span>
+</span></span><span class=line><span class=cl>TW_PREPARE_DATA_MEDIA_EARLY :<span class=o>=</span> <span class=nb>true</span>
+</span></span></code></pre></td></tr></table></div></div><p><code>TW_INCLUDE_CRYPTO</code>和<code>TW_INCLUDE_CRYPTO_FBE</code>这两项就会把libfscrypt库动态链接到/system/bin/recovey可执行文件上</p><p>首先想到的就是解决fscrypt_initialize_systemwide_keys报错，最后发现就是分区表有问题，twrpdtgen生成的分区表，也就是boardcofig.mk里面指定的那个分区表</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-makefile data-lang=makefile><span class=line><span class=cl><span class=c># Fstab
+</span></span></span><span class=line><span class=cl><span class=nv>TARGET_RECOVERY_FSTAB</span> <span class=o>:=</span> <span class=k>$(</span>DEVICE_PATH<span class=k>)</span>/recovery.fstab
+</span></span></code></pre></td></tr></table></div></div><p>格式是这样的</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>/odmko               ext4     /dev/block/by-name/odmko             <span class=nv>flags</span><span class=o>=</span><span class=nv>display</span><span class=o>=</span>odmko
+</span></span><span class=line><span class=cl>/data                f2fs     /dev/block/by-name/userdata          <span class=nv>flags</span><span class=o>=</span><span class=nv>display</span><span class=o>=</span>data
+</span></span></code></pre></td></tr></table></div></div><p>第一列是挂载点，第二列是文件系统类型，第三列是设备文件路径，第四列是flag</p><p>而正常Linux分区表是这样的<code>/vendor/etc/fstab.ud710_7h10</code>，第一列是dev设备文件路径，第二列是挂载点，第三列是文件系统类型，第四列是&lt;mnt_flags and options>，第五列是&lt;fs_mgr_flags></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>/dev/block/by-name/userdata /data        ext4 noatime,nosuid,nodev,nomblk_io_submit,noauto_da_alloc wait,fileencryption<span class=o>=</span>aes-256-xts,check
+</span></span><span class=line><span class=cl>/dev/block/by-name/cache    /cache       ext4 noatime,nosuid,nodev,nomblk_io_submit,noauto_da_alloc wait,check
+</span></span><span class=line><span class=cl>/dev/block/by-name/metadata /metadata    ext4 nodev,noatime,nosuid,errors<span class=o>=</span>panic wait,formattable,first_stage_mount
+</span></span></code></pre></td></tr></table></div></div><p>格式是不一样的，因此twrp启动日志/tmp/recovery.log会报错fscrypt_initialize_systemwide_keys fail，仔细研读了一下twrp的这个函数fscrypt_initialize_systemwide_keys，写的非常粗糙，一言不合就返回fail，具体是什么fail我也不知道，于是只能代码插桩，每个函数后面打个printf，如果输出了就说明这个函数执行成功了。</p><p>慢慢调试，仔细看报错，说的是fs_mgr_flags解析失败，我一看，boardcofig.mk里面指定的那个recovery.fstab会在编译构建recovery.img的过程中复制到/system/etc下面，然后init.rc脚本在启动的时候会链接到根目录</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>symlink /system/bin /bin
+</span></span><span class=line><span class=cl>symlink /system/etc /etc
+</span></span></code></pre></td></tr></table></div></div><p>于是fscrypt_initialize_systemwide_keys函数打开/etc/recovery.fstab文件就报错了，这个recovery.fstab文件根本就没有&lt;fs_mgr_flags>这一列</p><p>参考一下类似机型ud710_2h10成熟的设备树，它直接在/recovery/root目录下放了一个etc文件夹，这样initrc在链接的时候就会失败，里面放的是正常的Linux分区表</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>juju@ubuntu:~/twrp_devicetree_sprd_ud710_2h10/recovery/root$ ls
+</span></span><span class=line><span class=cl>etc      init.recovery.service.rc  init.recovery.vold_decrypt.rc  ueventd.rc
+</span></span><span class=line><span class=cl>init.rc  init.recovery.usb.rc      system                         vendor
+</span></span></code></pre></td></tr></table></div></div><p>我恍然大悟，于是也一样创建了etc文件夹，并且把原厂系统里/vendor/etc/fstab.ud710_7h10文件改名成recovery.fstab，这样就&lt;fs_mgr_flags>解析报错就解决了</p><p>继续调试，fscrypt_initialize_systemwide_keys还是报错，这次发现是运行时无法解密报错钥匙环</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl> recovery: Unable to find device keyring: Required key not available
+</span></span></code></pre></td></tr></table></div></div><p>因为fscrypt这个名字的钥匙环系统内核里没有，参考类似机型ud710_2h10成熟的设备树init脚本中它有一个install_keyring命令，这个命令<code>install_keyring</code>并非一个直接的.rc脚本命令，而是一个<strong>在系统初始化早期被调用的底层功能</strong>，其核心作用是<strong>为基于文件加密（File-Based Encryption, FBE）调用Linux内核的<code>add_key</code>系统调用，创建一个名为“fscrypt”的专用的内核密钥环（Keyring）</strong></p><p>继续运行调试，这次fscrypt_initialize_systemwide_keys还是报错，无法插入密钥fscrypt-provisioning</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>Failed to insert fscrypt-provisioning key <span class=k>for</span> 5309c45077aecb91 into session keyring: No such device
+</span></span></code></pre></td></tr></table></div></div><p>这个名字fscrypt-provisioning的密钥还是第一次听说，似乎没有什么用</p><ul><li><strong><code>fscrypt-provisioning</code> 密钥的作用</strong>：在用户空间重启等场景下，用于将文件系统的加密密钥（CE密钥）暂存于会话密钥环，以便在<code>/data</code>分区重新挂载后能够恢复。</li></ul><p>于是不管这么多，仔细阅读TWRP源码中 <code>/twrp-11/bootable/recovery/crypto/fscrypt/KeyUtil.cpp</code> 等文件，直接把对应的插入函数注释掉不让它返回false，启动后就成功解密DE设备加密的内容了</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=k>if</span> <span class=p>(</span><span class=o>!</span><span class=n>installFsKeyringKey</span><span class=p>(</span><span class=n>mountpoint</span><span class=p>,</span> <span class=n>options</span><span class=p>,</span> <span class=n>arg</span><span class=p>))</span> <span class=k>return</span> <span class=nb>false</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>arg</span><span class=o>-&gt;</span><span class=n>key_spec</span><span class=p>.</span><span class=n>type</span> <span class=o>==</span> <span class=n>FSCRYPT_KEY_SPEC_TYPE_IDENTIFIER</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=c1>// Retrieve the key identifier that the kernel computed.
+</span></span></span><span class=line><span class=cl>        <span class=n>policy</span><span class=o>-&gt;</span><span class=n>key_raw_ref</span> <span class=o>=</span>
+</span></span><span class=line><span class=cl>                <span class=n>std</span><span class=o>::</span><span class=n>string</span><span class=p>((</span><span class=kt>char</span><span class=o>*</span><span class=p>)</span><span class=n>arg</span><span class=o>-&gt;</span><span class=n>key_spec</span><span class=p>.</span><span class=n>u</span><span class=p>.</span><span class=n>identifier</span><span class=p>,</span> <span class=n>FSCRYPT_KEY_IDENTIFIER_SIZE</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=n>std</span><span class=o>::</span><span class=n>string</span> <span class=n>ref</span> <span class=o>=</span> <span class=n>keyrefstring</span><span class=p>(</span><span class=n>policy</span><span class=o>-&gt;</span><span class=n>key_raw_ref</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>LOG</span><span class=p>(</span><span class=n>INFO</span><span class=p>)</span> <span class=o>&lt;&lt;</span> <span class=s>&#34;Installed fscrypt key with ref &#34;</span> <span class=o>&lt;&lt;</span> <span class=n>ref</span> <span class=o>&lt;&lt;</span> <span class=s>&#34; to &#34;</span> <span class=o>&lt;&lt;</span> <span class=n>mountpoint</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>//if (!installProvisioningKey(key, ref, arg-&gt;key_spec)) return false;
+</span></span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=nb>true</span><span class=p>;</span>
+</span></span></code></pre></td></tr></table></div></div><p>很开心，继续解密CE就是用户锁屏密码保护的文件加密</p><p>查看logcat日志，缺gatekeeper就把原厂系统的gatekeeper拷贝过去，然后发现还要启动keystore和keystore_auth</p><p><code>keystore_auth</code> 的出现，是为了绕过 Android <code>keystore</code> 服务的一个关键安全限制。<strong><code>keystore</code> 服务会检查调用者的 UID（用户 ID），并拒绝让 root 用户添加身份验证令牌（auth tokens）<strong>TWRP 以 root 权限运行，无法直接调用 <code>keystore</code> 服务完成解密。同时，解密流程又必须通过 <code>keystore</code> 服务进行，这就形成了一个死结。<code>keystore_auth</code> 的解决方案是</strong>创建一个以普通系统用户（<code>system</code>）身份运行的代理服务</strong>-。这个服务拥有向 <code>keystore</code> 服务添加令牌的权限，从而绕过了 root 用户的权限限制。</p><p>把这几个服务都启动了，最后终于正常了。</p><h5 id=selinux小技巧>selinux小技巧</h5><p><a class=link href=https://blog.csdn.net/myarrow/article/details/10105961 target=_blank rel=noopener>SELinux策略语言&ndash;类型强制(编写TE规则)_selinux typeattribute-CSDN博客</a></p><p><a class=link href=https://suzhelevel6.github.io/suzhe_blog/android-system/embedded-guide/05-advanced/03-SEPOLICY_PRACTICE.html target=_blank rel=noopener>SEPolicy 实践指南 | SuZhe Blog</a></p><p>这里因为要启动系统的vold等服务，涉及到很多selinux的知识</p><p>编写了一大堆sepolicy规则和文件服务的context后，我终于找到了一个捷径</p><p>直接给一个服务设置成recovery域就行了，就像这样</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>service keystore /system/bin/keystore /data/misc/keystore
+</span></span><span class=line><span class=cl>    disabled
+</span></span><span class=line><span class=cl>    user root
+</span></span><span class=line><span class=cl>    group keystore drmrpc readproc log
+</span></span><span class=line><span class=cl>    seclabel u:r:recovery:s0
+</span></span></code></pre></td></tr></table></div></div><p>recovery域里面可以为所欲为，可以执行任何程序，访问任何服务和文件，只是会被记录，但是permission=1就说明正常执行了</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=nv>type</span><span class=o>=</span><span class=m>1400</span> audit<span class=o>(</span>0.0:4<span class=o>)</span>: avc: denied <span class=o>{</span> sys_nice <span class=o>}</span> <span class=k>for</span> <span class=nv>capability</span><span class=o>=</span><span class=m>23</span> <span class=nv>scontext</span><span class=o>=</span>u:r:vendor_init:s0 <span class=nv>tcontext</span><span class=o>=</span>u:r:vendor_init:s0 <span class=nv>tclass</span><span class=o>=</span>capability <span class=nv>permissive</span><span class=o>=</span><span class=m>1</span>
+</span></span></code></pre></td></tr></table></div></div><h5 id=keymaster和tee通信后报错>keymaster和tee通信后，报错</h5><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>01-01 00:00:22.906  <span class=m>3283</span>  <span class=m>3283</span> E TrustyKeymaster: Response of size <span class=m>4</span> contained error code -62
+</span></span></code></pre></td></tr></table></div></div><p>错误码 <code>-62</code> 在 Keymaster 中通常对应 <code>KM_ERROR_KEY_REQUIRES_UPGRADE</code>，这个错误通常发生在 Android 系统更新（特别是安全补丁级别变化）后-。为了安全，Keymaster 会将密钥与系统版本绑定。当 TWRP 等恢复环境尝试使用这些密钥时，如果其“声明的”系统版本与密钥绑定的版本不匹配，Keymaster 就会返回此错误，要求先升级密钥才能使用</p><p>解决这个问题的核心思路是<strong>让 TWRP 能够正确模拟或适配当前系统的 Keymaster 环境</strong></p><p>需要在编译 TWRP 时，让它的版本信息与设备当前系统保持一致。</p><ol><li><p><strong>获取系统版本信息</strong>：从设备当前系统的 <code>/system/build.prop</code> 文件中，找到以下两个关键属性：</p><ul><li><code>ro.build.version.security_patch</code> (安全补丁日期)</li><li><code>ro.build.version.release</code> (Android 版本)</li></ul></li><li><p><strong>在 TWRP 编译中设置</strong>：在 TWRP 设备树的 <code>BoardConfig.mk</code> 文件中，添加或修改以下变量，填入你获取到的值：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-makefile data-lang=makefile><span class=line><span class=cl><span class=c># 例如：PLATFORM_SECURITY_PATCH := 2025-11-01
+</span></span></span><span class=line><span class=cl><span class=nv>PLATFORM_SECURITY_PATCH</span> <span class=o>:=</span> &lt;你设备的安全补丁日期&gt;
+</span></span><span class=line><span class=cl><span class=c># 例如：PLATFORM_VERSION := 15
+</span></span></span><span class=line><span class=cl><span class=nv>PLATFORM_VERSION</span> <span class=o>:=</span> &lt;你设备的Android版本号&gt;
+</span></span></code></pre></td></tr></table></div></div><p>这能让 TWRP 在请求解密时，向 Keymaster 声明一个与系统匹配的版本，从而避免触发升级流程</p></li></ol><h3 id=9-修复fastbootd模式>9. 修复fastbootd模式</h3><p>目前twrp在重启选项中有重启进入fastboot模式和重启进入bootloader两个选项，但是其实是一回事，都是重启进入了uboot的fastboot模式，而我们一般说的fastbootd模式其实是twrp在recovery环境下启动fastbootd这个守护进程模拟的fastboot模式，</p><p>fastboot模式是一个<strong>系统重启命令</strong>（相当于 <code>reboot bootloader</code>）。它会<strong>彻底退出 TWRP 内核</strong>，让手机硬件复位，并加载芯片厂商（如高通/展锐）底层的 <strong>Bootloader 固件</strong>（Aboot / U-Boot）。</p><p>可以在fastboot模式下用</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>fastboot reboot fastboot
+</span></span></code></pre></td></tr></table></div></div><p>这个命令进入fastbootd模式，这是 Android 10+（动态分区）引入的<strong>用户态 fastboot</strong> 服务。它不是重启，而是在 <strong>TWRP 系统正在运行</strong>时，通过 USB 重配置，将当前 TWRP 环境模拟成一个 fastboot 协议的服务端</p><p>在device.mk加入编译fastbootd的选项，否则twrp默认是没有fastbootd的</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-makefile data-lang=makefile><span class=line><span class=cl><span class=c># 将 fastbootd 添加到系统包列表
+</span></span></span><span class=line><span class=cl><span class=nv>PRODUCT_PACKAGES</span> <span class=o>+=</span> <span class=se>\
+</span></span></span><span class=line><span class=cl>    fastbootd <span class=se>\
+</span></span></span><span class=line><span class=cl>    android.hardware.fastboot@1.0-impl-mock
+</span></span></code></pre></td></tr></table></div></div><p>刷入后进入fastbootd模式，电脑没识别，进adb模式看日志，发现缺库</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>CANNOT LINK EXECUTABLE <span class=s2>&#34;/system/bin/fastbootd&#34;</span>: library <span class=s2>&#34;libadbd.so&#34;</span> not found: needed by main executable
+</span></span></code></pre></td></tr></table></div></div><p>按道理应该自动包含的，再试一下，在boardconfig.mk加入一个标志</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-makefile data-lang=makefile><span class=line><span class=cl><span class=nv>TARGET_RECOVERY_FASTBOOT</span> <span class=o>:=</span> <span class=nb>true</span>
+</span></span></code></pre></td></tr></table></div></div><p>能成功运行fastbootd了，没有提示缺库，因此device.mk加入编译fastbootd的选项也不需要了，但是又有一个报错找不到HIDL服务</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>Control message: Could not find <span class=s1>&#39;android.hardware.boot@1.0::IBootControl/default&#39;</span> <span class=k>for</span> ctl.interface_start from pid: <span class=m>3266</span> <span class=o>(</span>/system/bin/hwservicemanager<span class=o>)</span>
+</span></span></code></pre></td></tr></table></div></div><p>一直找不到这个服务然后就退出fastbootd模式了，在原厂系统里找到了这个服务rc文件，加上去</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>service health-hal-2-0 /system/bin/android.hardware.health@2.0-service
+</span></span><span class=line><span class=cl>    class hal
+</span></span><span class=line><span class=cl>    user system
+</span></span><span class=line><span class=cl>    group system
+</span></span><span class=line><span class=cl>    capabilities WAKE_ALARM
+</span></span><span class=line><span class=cl>    file /dev/kmsg w
+</span></span><span class=line><span class=cl>    seclabel u:r:recovery:s0
+</span></span></code></pre></td></tr></table></div></div><p>继续报错，还是找不到服务</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>Could not find <span class=s1>&#39;android.hardware.fastboot@1.0::IFastboot/default&#39;</span> <span class=k>for</span> ctl.interface_start from pid: <span class=m>3266</span> <span class=o>(</span>/system/bin/hwservicemanager<span class=o>)</span>
+</span></span></code></pre></td></tr></table></div></div><p>这个服务实际上就是fastbootd的服务名，给fastbootd加上这个服务名就行了</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>service fastbootd /system/bin/fastbootd
+</span></span><span class=line><span class=cl>    disabled
+</span></span><span class=line><span class=cl>    group system
+</span></span><span class=line><span class=cl>    seclabel u:r:fastbootd:s0
+</span></span><span class=line><span class=cl>    interface android.hardware.fastboot@1.0::IFastboot default
+</span></span></code></pre></td></tr></table></div></div><p>最后终于成功进入fastbootd模式了！电脑<code>fastboot devices</code>能正常识别</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cmd data-lang=cmd><span class=line><span class=cl>E<span class=p>:</span><span class=nl>\天翼一号\2021版flyme</span><span class=c1> system未精简 去除自带su&gt;fastboot devices</span>
+</span></span><span class=line><span class=cl>S8090S00202120406032     fastboot
+</span></span></code></pre></td></tr></table></div></div><p>twrp镜像分享https://wwaxb.lanzoum.com/iDKNP46kqa6d</p></section><footer class="article-meta article-footer"><section class=article-tags><a href=/tags/android/>Android</a>
+<a href=/tags/twrp/>TWRP</a>
+<a href=/tags/port/>Port</a></section><section class="article-copyright inline-meta"><svg class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg>
+<span>Licensed under <a class=link href=https://creativecommons.org/licenses/by-nc-sa/4.0/ target=_blank rel=noopener>CC BY-NC-SA 4.0</a></span></section></footer><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css integrity=sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV crossorigin=anonymous><script src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js integrity=sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8 crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous defer></script><script>window.addEventListener("DOMContentLoaded",()=>{const e=[".main-article",".widget--toc"];e.forEach(e=>{const t=document.querySelector(e);t&&renderMathInElement(t,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1},{left:"\\[",right:"\\]",display:!0}],ignoredClasses:["gist"]})})})</script></article><aside><h2 class=section-title>相关文章</h2><div class=subsection-list><div class=article-list--tile><article><a href=/p/m3u8%E6%89%B9%E9%87%8F%E8%BD%AC%E6%8D%A2%E5%BC%80%E5%8F%91%E6%80%BB%E7%BB%93/><div class=article-details><h2 class=article-title>M3U8批量转换开发总结</h2></div></a></article><article><a href=/p/android%E7%B3%BB%E7%BB%9F%E4%B8%ADdexoatart%E6%96%87%E4%BB%B6%E8%BE%A8%E6%9E%90/><div class=article-details><h2 class=article-title>android系统中dex、oat、art文件辨析</h2></div></a></article><article><a href=/p/linux%E9%9F%B3%E9%A2%91%E7%B3%BB%E7%BB%9F%E7%A0%94%E7%A9%B6alsa-udev-pulseaudio/><div class=article-details><h2 class=article-title>Linux音频系统研究(ALSA Udev PulseAudio)</h2></div></a></article><article><a href=/p/qt-qml%E7%A8%8B%E5%BA%8F%E4%BD%BF%E7%94%A8linuxdeploy%E6%89%93%E5%8C%85appimage/><div class=article-details><h2 class=article-title>qt-qml程序使用linuxdeploy打包appimage</h2></div></a></article><article><a href=/p/deepin20.2-%E7%BC%96%E8%AF%91qt5.15.2/><div class=article-details><h2 class=article-title>deepin20.2 编译qt5.15.2</h2></div></a></article></div></div></aside><script src=https://giscus.app/client.js data-repo=wangqian306/wangqian306.github.io data-repo-id=R_kgDOUZA0nA data-category=Announcements data-category-id=DIC_kwDOUZA0nM4DFgc2 data-mapping=pathname data-strict=0 data-reactions-enabled=1 data-emit-metadata=0 data-input-position=top data-theme=light data-lang=zh-CN data-loading=lazy crossorigin=anonymous async></script><script>function setGiscusTheme(e){let t=document.querySelector("iframe.giscus-frame");t&&t.contentWindow.postMessage({giscus:{setConfig:{theme:e}}},"https://giscus.app")}(function(){addEventListener("message",t=>{if(event.origin!=="https://giscus.app")return;e()}),window.addEventListener("onColorSchemeChange",e);function e(){setGiscusTheme(document.documentElement.dataset.scheme==="light"?"light":"dark_dimmed")}})()</script><footer class=site-footer><section class=copyright>&copy;
+2026 我的博客</section><section class=powerby>使用 <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> 构建<br>主题 <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=4.0.3>Stack</a></b> 由 <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a> 设计</section></footer><script type=module>
+    import gallery from '\/ts\/gallery.js';
+
+    const articleContent = document.querySelector('.article-content');
+    const shouldLoad = articleContent && (articleContent.querySelectorAll('figure').length > 0 || articleContent.querySelectorAll('img.gallery-image').length > 0);
+    
+    if (shouldLoad) {
+        gallery(articleContent);
+
+        const PhotoSwipeLightbox = (await import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js")).default;
+        const styleHref = "https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.css";
+
+        const styleTag = document.createElement('link');
+        styleTag.rel = 'stylesheet';
+        styleTag.href = styleHref;
+        document.head.appendChild(styleTag);
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallerySelector: '.article-content',
+            childSelector: 'figure a.image-link',
+            pswpModule: () => import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js")
+        });
+        lightbox.init();
+    }
+</script></main></div><script type=text/javascript src=/ts/main.f856840516f7c2ad1769a8f5937e3d08d6cb386e2cd2dd025ae696e0ff207958.js defer></script></body></html>
